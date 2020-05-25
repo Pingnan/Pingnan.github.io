@@ -1,0 +1,10 @@
+div {
+  color: blue;
+  font-family: 'Sofia';
+  font-size:22px;
+  background-color:powderblue;
+  border:5px solid Violet;
+  padding: 20px;
+  border-radius: 20px;
+  border-style: outset;
+}
