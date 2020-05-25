@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>MathJax AsciiMath Test Page</title>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="flashcard.css" type="text/css"> </link>
+
+<script>
+MathJax = {
+  loader: {load: ['input/asciimath', 'output/chtml']}
+}
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+</script>
+<body>
+
+<div id="demo">
+<p style="text-align: center;"> Problem </p>
+<p> 28. At a fabric store, Melissa sold `8 7/8` yards of cloth to a customer. If the material was cut from a bolt of fabric containing `23 1/4` yards, how many yards are left on the bolt? </p>
+<p> 
+A. `14 3/8` <br> <br>
+B. `15 3/8` <br> <br>
+C. `15 3/4` <br> <br>
+D. `31 7/8`
+</p>
+</div>
+<div id="answer" style="display:none">
+<p>
+<p style="text-align: center;"> Solution </p>
+C. `14 3/8` <br> <br>
+`23 1/4 - 8 7/8 = \(23-8\) + \(1/4-7/8\)` <br><br>
+`=15 + \((1/4)*(2/2) - 7/8 \) = 15 + \(2/8 - 7/8\)` <br><br>
+`=15 + (2-7)/8 = 15 + (-5/8) = 14 + 1 - 5/8` <br><br>
+`= 14 + (8-5)/8 = 14 + 3/8 = 14 3/8`
+
+</p>
+</div>
+
+<script src="flashCard.js" type="text/script"> </script>
+
+</body>
+</html>
