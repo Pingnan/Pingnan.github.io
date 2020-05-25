@@ -12,7 +12,7 @@ MathJax = {
 <link rel="stylesheet" href="flashcard.css" type="text/css">
 </head>
 <body>
-<div id="demo">
+<div id="problem">
 <p style="text-align: center;"> Problem </p>
 <p> 29. A batch of salad dressing requires `1 2/3` cups of olive oil, `1/2` cup of vinegar, and `3/4` cup of water. How many cups of salad dressing will this recipe produce? </p>
 <p> 
@@ -35,17 +35,16 @@ C. `2 11/12` <br> <br>
 </div>
 
 <script>
-// document.getElementById("myBtn").addEventListener("click", displayDate);
-document.getElementById("demo").addEventListener("mousedown", showAnswer);
+document.getElementById("problem").addEventListener("mousedown", showAnswer);
 document.getElementById("answer").addEventListener("mouseout", showProblem);
 
 function showAnswer() {
-  document.getElementById("demo").style.display = "none";
+  document.getElementById("problem").style.display = "none";
   document.getElementById("answer").style.display = "block";
 }
 
 function showProblem() {
-  document.getElementById("demo").style.display = "block";
+  document.getElementById("problem").style.display = "block";
   document.getElementById("answer").style.display = "none";
 }
 </script>
