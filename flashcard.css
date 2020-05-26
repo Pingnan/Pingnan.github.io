@@ -9,4 +9,5 @@ div {
   border-style: outset;
   width: 400px;
   height: 500px;
+  box-shadow: 2px 2px 5px grey;
 }
