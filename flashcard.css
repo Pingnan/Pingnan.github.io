@@ -1,12 +1,12 @@
 div {
   color: blue;
   font-family: 'Sofia';
-  font-size:1vw;
+  font-size:4vw;
   background-color:powderblue;
   border:10px solid Violet;
   padding: 20px;
   border-radius: 20px;
   border-style: outset;
-  width: 20vw;
-  height: 25vw;
+  width: 40vw;
+  height: 50vw;
 }
