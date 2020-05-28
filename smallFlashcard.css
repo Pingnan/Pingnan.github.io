@@ -3,11 +3,11 @@ div {
   font-family: 'Sofia';
   font-size:22px;
   background-color:powderblue;
-  border:10px solid Violet;
+/*  border:10px solid Violet; */
   padding: 20px;
   border-radius: 20px;
-  border-style: outset;
-  max-width: 400px;
-  height: 500px;
-  box-shadow: 10px 10px 5px grey;
+/*  border-style: outset; */
+  max-width: 100px;
+  max-height: 100px;
+  /*  box-shadow: 10px 10px 5px grey; */
 }
