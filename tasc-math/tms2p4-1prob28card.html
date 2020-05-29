@@ -1,11 +1,24 @@
 <html>
 <head>
-<title>MathJax AsciiMath Test Page</title>
-<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" href="https://pingnan.github.io/flashcard.css" type="text/css"> </link>
-
+  <title>MathJax AsciiMath Test Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine"> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://pingnan.github.io/flashcard.css" type="text/css"> </link>
+  <style>
+  .w3-comic {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+  .w3-tangerine {
+      font-family: "Tangerine", serif;
+    }
+    .w3-bold {
+      font-weight: bold;
+    }
+    body {
+      background-color:lightblue;
+    }
+    </style>
 <script>
 MathJax = {
   loader: {load: ['input/asciimath', 'output/chtml']}
@@ -19,7 +32,7 @@ MathJax = {
 
 <body>
 
-<div id="problem">
+<div id="problem" class="w3-comic w3-large">
 <p style="text-align: center;"> Problem </p>
 <p> 28. At a fabric store, Melissa sold `8 7/8` yards of cloth to a customer. If the material was cut from a bolt of fabric containing `23 1/4` yards, how many yards are left on the bolt? </p>
 <p> 
@@ -29,7 +42,7 @@ C. `15 3/4` <br>
 D. `31 7/8`
 </p>
 </div>
-<div id="answer" style="display:none">
+<div id="answer" style="display:none" class="w3-comic w3-large">
 <p>
 <p style="text-align: center;"> Solution </p>
 C. `14 3/8` <br> <br>
