@@ -18,15 +18,18 @@
 </script>
 <script>
 $(document).ready(function(){
-  $("#problem").on({
+  $("button").on({
+    mouseenter: function(){
+      $(this).css("background-color", "lightgray");
+    },  
+    mouseleave: function(){
+      $(this).siblings(".answer").hide();
+      $(this).siblings(".problem").show();
+    }, 
     click: function(){
-    $(this).next.show();
-    $(this).hide();
-  },
-  mouseleave: function(){
-    $(this).show();
-    $(this).next.hide();
-  }
+      $(this).siblings(".answer").show();
+      $(this).siblings(".problem").hide();
+    }  
   });
 });
 </script>
@@ -46,6 +49,7 @@ $(document).ready(function(){
       `12/35`
     </p>
   </div>
+  <button> Answer </button>
 </div>
 
 </body>
