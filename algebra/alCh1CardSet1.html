@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> </link>
 <link rel="stylesheet" href="https://pingnan.github.io/smallFlashcard.css" type="text/css"> </link>
-<script src="https://www.w3schools.com/lib/w3.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
   MathJax = {
@@ -18,13 +18,9 @@
 </script>
 <script>
 $(document).ready(function(){
-  $("#btn1").click(function(){
-    $("#problem").hide();
-    $("#answer").show();
-  });
-  $("#btn2").click(function(){
-    $("#problem").show();
-    $("#answer").hide();
+  $("#problem").click(function(){
+    $(this).hide();
+    $(this).next.show();
   });
 });
 </script>
