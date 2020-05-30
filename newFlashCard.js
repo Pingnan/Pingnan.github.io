@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("button.fs-btn").on({
+  $("button").on({
     mouseenter: function(){
       $(this).css("background-color", "lightgray");
     },  
