@@ -18,9 +18,13 @@
 </script>
 <script>
 $(document).ready(function(){
-  $("#problem").click(function(){
+  $("#problem").mouseenter(function(){
     $("#answer").show();
     $(this).hide();
+  });
+  $("#problem").mouseleave(function(){
+    $(this).show();
+    $("#answer").hide();
   });
 });
 </script>
