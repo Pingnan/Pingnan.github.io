@@ -18,13 +18,15 @@
 </script>
 <script>
 $(document).ready(function(){
-  $("#problem").click(function(){
-    $("#answer").show();
+  $("#problem").on({
+    click: function(){
+    $(this).next.show();
     $(this).hide();
   },
-  $("#problem").mouseleave(function(){
+  mouseleave: function(){
     $(this).show();
-    $("#answer").hide();
+    $(this).next.hide();
+  }
   });
 });
 </script>
