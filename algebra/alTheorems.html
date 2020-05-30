@@ -23,11 +23,11 @@ $(document).ready(function(){
       $(this).css("background-color", "lightgray");
     },  
     mouseleave: function(){
-      $(this).siblings(".answer").hide();
+      $(this).siblings(".solution").hide();
       $(this).siblings(".problem").show();
     }, 
     click: function(){
-      $(this).siblings(".answer").show();
+      $(this).siblings(".solution").show();
       $(this).siblings(".problem").hide();
     }  
   });
@@ -36,7 +36,7 @@ $(document).ready(function(){
 </head>
 <!-- Body -->
 <body>
-
+<div class="w3-row">
 <div class="w3-container">
   <div class="w3-card-4 problem">
     <p style="text-align: center;">  
@@ -44,12 +44,28 @@ $(document).ready(function(){
     </p>
   </div>
 
-  <div class="w3-card-4 answer" style="display:none">
+  <div class="w3-card-4 solution" style="display:none">
     <p style="text-align: center;"> 
       `12/35`
     </p>
   </div>
-  <button> Answer </button>
+  <button> Solution </button>
+</div>
+  
+<div class="w3-container">
+  <div class="w3-card-4 problem">
+    <p style="text-align: center;">  
+      `1/5 + 1/7 =` 
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution" style="display:none">
+    <p style="text-align: center;"> 
+      `12/35`
+    </p>
+  </div>
+  <button> Solution </button>
+</div>  
 </div>
 
 </body>
