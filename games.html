@@ -51,6 +51,7 @@
  <br> 
 
 <!-- body -->
+    <button> start </button>
   <div class="w3-container w3-myfont w-row-padding">
     <div id="1stCard" class="gameCard w3-third w3-card"> 4 </div>
     <div id="2ndCard" class="gameCard w3-third w3-card"> 5 </div>
@@ -62,5 +63,12 @@
     <p class="w3-xxlarge w3-center"> &copy 2020 Poema Media </p>
   </div>
 </div>
+  <script>
+  $(document).ready(function(){
+    $("button").click(function(){
+    $("#1stCard").text(Math.round(Math.random()*10+0.5));
+      });
+  });
+  </script>
 </body>
 </html>
