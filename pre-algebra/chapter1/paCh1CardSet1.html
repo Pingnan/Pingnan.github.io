@@ -16,23 +16,24 @@
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
 </script>
-<script type="text/javascript" src="https://pingnan.github.io/newFlashCard.js"> </script>
+<!-- <script type="text/javascript" src="https://pingnan.github.io/newFlashCard.js"> </script> -->
 <style>
 body {
     background-color: powderblue;
 }
+
 </style>
 </head>
 <!-- Body -->
 <body>
 
 <h2 class="w3-center"> Integer Addition & Subtraction </h2>
-<h4 class="w3-center"> Click on the "Solution" button to see the solution </h4>
+<h4 class="w3-center"> Click on a card to see the solution </h4>
 <br>
 <div class="w3-row">
 <!-- card 1 -->
-<div class="w3-quarter w3-container">
-  <div class="w3-card-4 problem">
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
     <p style="text-align: center;">  
       `\(+9\) + \(-4\) =` <br><br>
     </p>
@@ -44,11 +45,11 @@ body {
       `= \(+5\)`
     </p>
   </div>
-  <button> Solution </button>
+
 </div>
 <!-- card 2 -->
-<div class="w3-quarter w3-container">
-  <div class="w3-card-4 problem">
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
     <p style="text-align: center;">  
       `\(-7\) + \(-5\) =` <br><br>
     </p>
@@ -59,11 +60,11 @@ body {
       `\(-12\)` <br> <br>
     </p>
   </div>
-  <button> Solution </button>
+
 </div>  
 <!-- card 3 -->
-<div class="w3-quarter w3-container">
-  <div class="w3-card-4 problem">
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
     <p style="text-align: center;">  
       `\(-10\) + \(+5\) =` <br><br>
     </p>
@@ -75,11 +76,10 @@ body {
       `= \(-5\)`
     </p>
   </div>
-  <button> Solution </button>
 </div>    
 <!-- card 4 -->
-<div class="w3-quarter w3-container">
-  <div class="w3-card-4 problem">
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
     <p style="text-align: center;">  
       `\(+9\) + \(+8\) =` <br><br>
     </p>
@@ -90,11 +90,12 @@ body {
       `\(+17\)` <br>
     </p>
   </div>
-  <button> Solution </button>
 </div>  
+</div>
+<div class="w3-row">
 <!-- card 5 -->
-<div class="w3-quarter w3-container">
-  <div class="w3-card-4 problem">
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
     <p style="text-align: center;">  
       `\(+11\) + \(-6\) =` <br><br>
     </p>
@@ -106,11 +107,10 @@ body {
       `= \(+5\)`
     </p>
   </div>
-  <button class="w3-center"> Solution </button>  
 </div>   
 <!-- card 6 -->
-<div class="w3-quarter w3-container">
-  <div class="w3-card-4 problem">
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
     <p style="text-align: center;">  
       `\(-17\) + \(+5\) =` <br><br>
     </p>
@@ -122,11 +122,10 @@ body {
       `= \(-12\)`
     </p>
   </div>
-  <button> Solution </button>
 </div>   
 <!-- card 7 -->
-<div class="w3-quarter w3-container">
-  <div class="w3-card-4 problem">
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
     <p style="text-align: center;">  
       `\(-12\) + \(-8\) =` <br><br>
     </p>
@@ -137,11 +136,10 @@ body {
       `\(-20\)` <br>
     </p>
   </div>
-  <button> Solution </button>
 </div>   
  <!-- card 8 -->
-<div class="w3-quarter w3-container">
-  <div class="w3-card-4 problem">
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
     <p style="text-align: center;">  
       `\(-20\) + \(+15\) =` <br><br>
     </p>
@@ -153,9 +151,22 @@ body {
       `\(-5\)`
     </p>
   </div>
-  <button class="w3-center"> Solution </button>
 </div> 
   
 </div>
+<script>
+$(document).ready(function(){
+  $("div.fs-card").on({
+    mouseleave: function(){
+      $(this).children(".solution").hide();
+      $(this).children(".problem").show();
+    }, 
+    click: function(){
+      $(this).children(".solution").show();
+      $(this).children(".problem").hide();
+    }  
+  });
+});
+</script>
 </body>
 </html>
