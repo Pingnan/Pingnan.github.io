@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pre-algebra Simple Fraction Operation Flash Cards</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> </link>
+<link rel="stylesheet" href="https://pingnan.github.io/smallFlashcard.css" type="text/css"> </link>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  MathJax = {
+    loader: {load: ['input/asciimath', 'output/chtml']}
+  }
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+</script>
+<!-- <script type="text/javascript" src="https://pingnan.github.io/newFlashCard.js"> </script> -->
+<style>
+body {
+    background-color: powderblue;
+}
+
+</style>
+</head>
+<!-- Body -->
+<body>
+
+<h2 class="w3-center"> Linear equations </h2>
+<h4 class="w3-center"> Click on a card to see the solution </h4>
+<br>
+<div class="w3-row">
+<!-- card 1 -->
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
+    <p style="text-align: center;">  
+      `2x + 3 = 9` <br><br>
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution" style="display:none">
+    <p style="text-align: center;"> 
+      `\(+5\) + \(+4\) + \(-4\) ` <br>
+      `= \(+5\)`
+    </p>
+  </div>
+
+</div>
+<!-- card 2 -->
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
+    <p style="text-align: center;">  
+      `4x - 5 = 13` <br><br>
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution" style="display:none">
+    <p style="text-align: center;"> 
+      `\(-12\)` <br> <br>
+    </p>
+  </div>
+
+</div>  
+<!-- card 3 -->
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
+    <p style="text-align: center;">  
+      `2x + 5 = 3x -7` <br><br>
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution" style="display:none">
+    <p style="text-align: center;"> 
+      `\(-5\) + \(-5\) + \(+5\) ` <br>
+      `= \(-5\)`
+    </p>
+  </div>
+</div>    
+<!-- card 4 -->
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
+    <p style="text-align: center;">  
+      `2\(2x+3) = x-4` <br><br>
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution" style="display:none">
+    <p style="text-align: center;"> 
+      `\(+17\)` <br>
+    </p>
+  </div>
+</div>  
+</div>
+<div class="w3-row">
+<!-- card 5 -->
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
+    <p style="text-align: center;">  
+      `3(x-4) = 16` <br><br>
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution" style="display:none">
+    <p style="text-align: center;"> 
+      `\(+5\) + \(+6\) + \(-6\) ` <br>
+      `= \(+5\)`
+    </p>
+  </div>
+</div>   
+<!-- card 6 -->
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
+    <p style="text-align: center;">  
+      `4x+5 = 2x+9` <br><br>
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution" style="display:none">
+    <p style="text-align: center;"> 
+      `\(-12\) + \(-5\) + \(+5\) ` <br>
+      `= \(-12\)`
+    </p>
+  </div>
+</div>   
+<!-- card 7 -->
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
+    <p style="text-align: center;">  
+      `x-4 = 3x + 3` <br><br>
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution" style="display:none">
+    <p style="text-align: center;"> 
+      `\(-20\)` <br>
+    </p>
+  </div>
+</div>   
+ <!-- card 8 -->
+<div class="w3-quarter w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue">
+    <p style="text-align: center;">  
+      `4(x-3) = 2(x+1)` <br><br>
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution" style="display:none">
+    <p style="text-align: center;"> 
+      `\(-5\) + \(-15\) + \(+15\) =` <br>
+      `\(-5\)`
+    </p>
+  </div>
+</div> 
+  
+</div>
+<script>
+$(document).ready(function(){
+  $("div.fs-card").on({
+    mouseleave: function(){
+      $(this).children(".solution").hide();
+      $(this).children(".problem").show();
+    }, 
+    click: function(){
+      $(this).children(".solution").show();
+      $(this).children(".problem").hide();
+    }  
+  });
+});
+</script>
+</body>
+</html>
