@@ -7,6 +7,12 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
+  .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
     .w3-tangerine {
       font-family: "Tangerine", serif;
     }
@@ -26,6 +32,7 @@
     .gameCard {
       width: 200px;
       height: 200px;
+      margin: 10px;
       line-height: 200px;
       font-size: 100px;
       text-align: center;
@@ -47,7 +54,7 @@
     </div>
 
 
-  <div class="w3-center w3-card">
+  <div class="w3-container w3-center w3-card">
     <!-- title -->    
     <p class="w3-jumbo w3-bold"> The Game of 24 </p>
     <button class="w3-xxlarge w3-blue w3-hover-purple w3-round-xlarge"> &nbsp press for next round &nbsp </button>
@@ -55,13 +62,10 @@
 
 <!-- body -->
     
-    <div class="w3-container w3-myfont w3-row w3-center justify-content-center">
+    <div class="flex-container w3-container w3-myfont w3-row justify-content-center">
       <div id="1stCard" class="gameCard w3-card w3-animate-top w3-cell"> 4 </div>
-      <div style="width: 20px;" class="w3-cell"> </div>
       <div id="2ndCard" class="gameCard w3-card w3-animate-left w3-cell"> 5 </div>
-      <div style="width: 20px;" class="w3-cell"> </div>
       <div id="3rdCard" class="gameCard w3-card w3-animate-bottom w3-cell"> 6 </div>
-      <div style="width: 20px;" class="w3-cell"> </div>
       <div id="4thCard" class="gameCard w3-card w3-animate-right w3-cell"> 7 </div>
     </div>
    <br> <br>   
