@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Cache-Control" content="private, no-store" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> </link>
-<link rel="stylesheet" href="https://pingnan.github.io/smallFlashcard.css" type="text/css"> </link>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
@@ -19,8 +18,26 @@
 </script>
 <!-- <script type="text/javascript" src="https://pingnan.github.io/newFlashCard.js"> </script> -->
 <style>
+
+div {
+  color: blue;
+  background-color:powderblue;
+}
 body {
     background-color: powderblue;
+}
+.fs-medium {
+  display: flex;
+	width: 300px;
+  height: 200px;
+  margin: 10px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 </style>
@@ -31,127 +48,127 @@ body {
 <h2 class="w3-center"> Complex Numbers </h2>
 <h4 class="w3-center"> Click on a card to see the solution </h4>
 <br>
-<div class="w3-row">
+<div class="flexbox">
 <!-- card 1 -->
-<div class="w3-quarter w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue">
-    <p style="text-align: center;" class="w3-xlarge">  
-      `\(2+3i) + \(3+4i\) =` <br><br><br>
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center;">
+      `\(2+3i) + \(3+4i\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution" style="display:none">
-    <p style="text-align: center;" class="w3-xlarge"> 
-      `5+7i` <br> <br> <br>
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
+      `5+7i`
     </p>
   </div>
 
 </div>
 <!-- card 2 -->
-<div class="w3-quarter w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue">
-    <p style="text-align: center;" class="w3-xlarge">  
-      `\(3+5i\) + \(4-3i\) =` <br><br><br>
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center;">
+      `\(3+5i\) + \(4-3i\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution" style="display:none">
-    <p style="text-align: center;" class="w3-xlarge"> 
-      `7+2i` <br> <br> <br>
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
+      `7+2i`
     </p>
   </div>
 
-</div>  
+</div>
 <!-- card 3 -->
-<div class="w3-quarter w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue">
-    <p style="text-align: center;" class="w3-xlarge">  
-      `\(4+2i\) - \(3+4i\) =` <br><br><br>
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center;">
+      `\(4+2i\) - \(3+4i\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution" style="display:none">
-    <p style="text-align: center;" class="w3-xlarge"> 
-      `1-2i` <br> <br> <br>
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
+      `1-2i`
     </p>
   </div>
-</div>    
+</div>
 <!-- card 4 -->
-<div class="w3-quarter w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue">
-    <p style="text-align: center;" class="w3-xlarge">  
-      `\(5 - 3i\) - \(6-4i\) =` <br><br><br>
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center;">
+      `\(5 - 3i\) - \(6-4i\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution" style="display:none">
-    <p style="text-align: center;" class="w3-xlarge"> 
-      `-1 + i` <br> <br> <br>
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
+      `-1 + i`
     </p>
   </div>
-</div> 
+</div>
 <!-- card 5 -->
-<div class="w3-quarter w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue">
-    <p style="text-align: center;" class="w3-xlarge">  
-      `\(2 + 3i\) xx \(4 + 5i\) =` <br><br><br>
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center;">
+      `\(2 + 3i\) xx \(4 + 5i\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution" style="display:none">
-    <p style="text-align: center;" class="w3-xlarge"> 
-      `8+10i+12i-15` <br>
-      `-7 + 22i` <br>
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
+      `8+10i+12i-15 =` <br>
+      `-7 + 22i`
     </p>
   </div>
-</div> 
+</div>
 <!-- card 6 -->
-<div class="w3-quarter w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue">
-    <p style="text-align: center;" class="w3-xlarge">  
-      `\(4 - 2i\) xx \(5-3i\) =` <br><br><br>
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center;">
+      `\(4 - 2i\) xx \(5-3i\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution" style="display:none">
-    <p style="text-align: center;" class="w3-xlarge"> 
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
       `20-12i-10i-6 =` <br>
-      `14 - 22i`<br> <br>
+      `14 - 22i`
     </p>
   </div>
-</div> 
+</div>
 <!-- card 7 -->
-<div class="w3-quarter w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue">
-    <p style="text-align: center;" class="w3-xlarge">  
-      `(4+3i)/(2+5i) =` <br><br><br>
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center; font-size: 30px;">
+      `(4+3i)/(2+5i) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution" style="display:none">
-    <p style="text-align: center;" class="w3-xlarge"> 
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
       `(4+3i)/(2+5i) xx (2-5i)/(2-5i) =` <br>
       `(8-20i+6i+15)/(4+25)=` <br>
       `23/29 - 14/29 i`
     </p>
   </div>
-</div> 
+</div>
 <!-- card 8 -->
-<div class="w3-quarter w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue">
-    <p style="text-align: center;" class="w3-xlarge">  
-      `(3+4i)/(4-3i) =` <br><br><br>
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center; font-size: 30px">
+      `(3+4i)/(4-3i) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution" style="display:none">
-    <p style="text-align: center;" class="w3-xlarge"> 
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
       `(3+4i)/(4-3i) xx (4+3i)/(4+3i)=` <br>
       `(12+9i+16i-12)/(16+9)=` <br>
       `(25i)/25 = i`
     </p>
   </div>
-</div> 
+</div>
 </div>
 </div>
 <script>
@@ -160,13 +177,14 @@ $(document).ready(function(){
     mouseleave: function(){
       $(this).children(".solution").hide();
       $(this).children(".problem").show();
-    }, 
+    },
     click: function(){
       $(this).children(".solution").show();
       $(this).children(".problem").hide();
-    }  
+    }
   });
 });
 </script>
 </body>
 </html>
+
