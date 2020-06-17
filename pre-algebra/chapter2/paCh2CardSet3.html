@@ -35,7 +35,7 @@
 <br>
 <div class="w3-row">
 <!-- card 1 -->
-<div class="w3-quarter w3-container">
+<div class="w3-quarter w3-container fs-card">
   <div class="w3-card-4 problem">
     <p style="text-align: center;">  
       `2/4 =` <br><br>
@@ -48,10 +48,9 @@
       `1/2`
     </p>
   </div>
-  <button> Solution </button>
 </div>
 <!-- card 2 -->
-<div class="w3-quarter w3-container">
+<div class="w3-quarter w3-container fs-card">
   <div class="w3-card-4 problem">
     <p style="text-align: center;">  
       `6/9 =` <br><br>
@@ -64,10 +63,9 @@
       `= 2/3`
     </p>
   </div>
-  <button> Solution </button>
 </div>  
 <!-- card 3 -->
-<div class="w3-quarter w3-container">
+<div class="w3-quarter w3-container fs-card">
   <div class="w3-card-4 problem">
     <p style="text-align: center;">  
       `5/15 =` <br><br>
@@ -80,10 +78,9 @@
       `=1/3`
     </p>
   </div>
-  <button> Solution </button>
 </div>    
 <!-- card 4 -->
-<div class="w3-quarter w3-container">
+<div class="w3-quarter w3-container fs-card">
   <div class="w3-card-4 problem">
     <p style="text-align: center;">  
       `12/14 =` <br><br>
@@ -96,10 +93,9 @@
       `= 6/7`
     </p>
   </div>
-  <button> Solution </button>
 </div>  
 <!-- card 5 -->
-<div class="w3-quarter w3-container">
+<div class="w3-quarter w3-container fs-card">
   <div class="w3-card-4 problem">
     <p style="text-align: center;">  
       `27/63 =` <br><br>
@@ -112,10 +108,9 @@
       `= 3/7`
     </p>
   </div>
-  <button class="w3-center"> Solution </button>  
 </div>   
 <!-- card 6 -->
-<div class="w3-quarter w3-container">
+<div class="w3-quarter w3-container fs-card">
   <div class="w3-card-4 problem">
     <p style="text-align: center;">  
       `16/36 =` <br><br>
@@ -128,10 +123,9 @@
       `= 4/9`
     </p>
   </div>
-  <button> Solution </button>
 </div>   
 <!-- card 7 -->
-<div class="w3-quarter w3-container">
+<div class="w3-quarter w3-container fs-card">
   <div class="w3-card-4 problem">
     <p style="text-align: center;">  
       `42/54 =` <br><br>
@@ -144,10 +138,9 @@
       `= 7/9`
     </p>
   </div>
-  <button> Solution </button>
 </div>   
  <!-- card 8 -->
-<div class="w3-quarter w3-container">
+<div class="w3-quarter w3-container fs-card">
   <div class="w3-card-4 problem">
     <p style="text-align: center;">  
       `20/35 =` <br><br>
@@ -160,9 +153,20 @@
       `= 4/7`
     </p>
   </div>
-  <button class="w3-center"> Solution </button>
 </div> 
-  
 </div>
+<script>
+$(document).ready(function(){
+  $("div.fs-card").on({
+    mouseleave: function(){
+      $(this).children(".solution").hide();
+      $(this).children(".problem").show();
+    }, 
+    click: function(){
+      $(this).children(".solution").show();
+      $(this).children(".problem").hide();
+    }  
+  });
+});  
 </body>
 </html>
