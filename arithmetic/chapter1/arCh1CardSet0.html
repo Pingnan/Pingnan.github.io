@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pre-algebra Simple Fraction Operation Flash Cards</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> </link>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  MathJax = {
+    loader: {load: ['input/asciimath', 'output/chtml']}
+  }
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+</script>
+<!-- <script type="text/javascript" src="https://pingnan.github.io/newFlashCard.js"> </script> -->
+<style>
+  body {
+      background-color: powderblue;
+  }
+  .my-tangerine, h4 {
+    font-family: "Tangerine", serif;
+    color: blue;
+  }
+  .fs-medium {
+    display: flex;
+  	width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  p {
+    color: blue;
+  }
+  </style>
+</head>
+<!-- Body -->
+<body>
+
+<h2 class="w3-center my-tangerine w3-xxxlarge"> Single & double digit addition </h2>
+<h4 class="w3-center w3-xxlarge"> Click on a card to see the solution </h4>
+<br>
+<div class="flexbox">
+<!-- card 1 -->
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center;">
+      `3 + 5 =`
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
+      `8`
+    </p>
+  </div>
+
+</div>
+<!-- card 2 -->
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center;">
+      `6 + 7 =`
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
+      `13`
+    </p>
+  </div>
+
+</div>
+<!-- card 3 -->
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center;">
+      `8 + 9 =`
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
+      `17`
+    </p>
+  </div>
+</div>
+<!-- card 4 -->
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center;">
+      `5 + 4 =`
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
+      `9`
+    </p>
+  </div>
+</div>
+<!-- card 5 -->
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center;">
+      `13 + 5 =`
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
+      `18`
+    </p>
+  </div>
+</div>
+<!-- card 6 -->
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center;">
+      `11 + 8 =`
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
+      `19`
+    </p>
+  </div>
+</div>
+<!-- card 7 -->
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center;">
+      `16 + 7 =`
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
+      `23`
+    </p>
+  </div>
+</div>
+ <!-- card 8 -->
+<div class="w3-container fs-card">
+  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+    <p style="text-align: center;">
+      `18 + 9 =`
+    </p>
+  </div>
+
+  <div class="w3-card-4 solution fs-medium" style="display:none">
+    <p style="text-align: center;">
+      `27`
+    </p>
+  </div>
+</div>
+</div>
+<script>
+$(document).ready(function(){
+  $("div.fs-card").on({
+    mouseleave: function(){
+      $(this).children(".solution").hide();
+      $(this).children(".problem").show();
+    },
+    click: function(){
+      $(this).children(".solution").show();
+      $(this).children(".problem").hide();
+    }
+  });
+});
+</script>
+</body>
+</html>
