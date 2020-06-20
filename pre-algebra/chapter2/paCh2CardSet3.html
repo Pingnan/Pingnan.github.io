@@ -3,11 +3,9 @@
 <head>
 <title>Fraction Simplification</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> </link>
+<!-- Google font -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Utilities for math symbols and equations -->
 <script>
   MathJax = {
     loader: {load: ['input/asciimath', 'output/chtml']}
@@ -17,44 +15,45 @@
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
 </script>
+<!-- Bootstrap 4 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- My external .css file -->
+<link rel="stylesheet" href="../../css/flashCard.css" type="text/css"> </link>
+
 <style>
-  .w3-tangerine {
+  .ps-tangerine {
     font-family: "Tangerine", serif;
   }
   body {
     background-color: powderblue;
   }
-  .fs-medium {
-  display: flex;
-	width: 300px;
-  height: 200px;
-  margin: 10px;
-  font-size: 30px;
-  justify-content: center;
-  align-items: center;
-}
-.flexbox {
-  display: flex;
-  flex-wrap: wrap;
-}
+  h1, h2 {
+    color: blue;
+  }
+  .fc-sm:hover {
+  background-color: lightgreen;
+  }
 </style>
 </head>
 <!-- Body -->
 <body>
 
-<p class="w3-tangerine w3-center w3-xxxlarge"> Fraction Simplification Practice </p>
-<p class="w3-center w3-tangerine w3-xxlarge"> Click on a card to see the solution </p>
+<h1 class="ps-tangerine text-center"> Fraction Simplification Practice </h1>
+<h2 class="ps-tangerine text-center"> Click on a card to see the solution </h2>
 <br>
-<div class="flexbox">
+<div class="row">
 <!-- card 1 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `2/4 =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `(2 -: 2)/(4 -: 2) = ` <br>
       `1/2`
@@ -62,14 +61,14 @@
   </div>
 </div>
 <!-- card 2 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `6/9 =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `(6 -: 3)/(9 -: 3)` <br>
       `= 2/3`
@@ -77,14 +76,14 @@
   </div>
 </div>
 <!-- card 3 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `5/15 =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `(5 -: 5)/(15 -: 5)` <br>
       `=1/3`
@@ -92,29 +91,31 @@
   </div>
 </div>
 <!-- card 4 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `12/14 =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `(12 -: 2)/(14 -: 2)` <br>
       `= 6/7`
     </p>
   </div>
 </div>
+</div>
+<div class="row">
 <!-- card 5 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `27/63 =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `(27 -: 9)/(63 -: 9)` <br>
       `= 3/7`
@@ -122,14 +123,14 @@
   </div>
 </div>
 <!-- card 6 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `16/36 =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `(16 -: 4)/(36 -: 4)` <br>
       `= 4/9`
@@ -137,14 +138,14 @@
   </div>
 </div>
 <!-- card 7 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `42/54 =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `(42 -: 6)/(54 -: 6)` <br>
       `= 7/9`
@@ -152,14 +153,14 @@
   </div>
 </div>
  <!-- card 8 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `20/35 =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `(20 -: 5)/(35 -: 5)` <br>
       `= 4/7`
