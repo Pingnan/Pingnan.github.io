@@ -21,7 +21,7 @@
 
 .fc-sm, .fc-md, fc-lg, .fc-jb {
     display: flex;
-    font-size: 30px;
+    font-size: 20px;
     margin: 20px;
     padding: 20px;
     justify-content: center;
