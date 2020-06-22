@@ -4,9 +4,15 @@
 <title>Complex Numbers</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Cache-Control" content="private, no-store" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> </link>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- My external .css file -->
+  <link rel="stylesheet" href="../../css/flashCard.css" type="text/css"> </link>
+  <!-- Utilities for Math symbols and equations -->
 <script>
   MathJax = {
     loader: {load: ['input/asciimath', 'output/chtml']}
@@ -16,137 +22,128 @@
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
 </script>
-<!-- <script type="text/javascript" src="https://pingnan.github.io/newFlashCard.js"> </script> -->
 <style>
-
-div {
+.my-tangerine, h1, h2 {
+  font-family: "Tangerine", serif;
   color: blue;
-  background-color:powderblue;
 }
-body {
-    background-color: powderblue;
-}
-.fs-medium {
-  display: flex;
-	width: 300px;
-  height: 200px;
-  margin: 10px;
-  font-size: 20px;
-  justify-content: center;
-  align-items: center;
-}
-.flexbox {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 </style>
 </head>
 <!-- Body -->
 <body>
 
-<h2 class="w3-center"> Complex Numbers </h2>
-<h4 class="w3-center"> Click on a card to see the solution </h4>
-<br>
-<div class="flexbox">
+<h1> Complex Numbers </h1>
+<h2> Click on a card to see the solution </h2>
+
+<div class="row justify-content-center">
 <!-- card 1 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
-    <p style="text-align: center;">
+<div class="fs-card">
+  <div class="card shadow problem fc-md">
+    <p>
       `\(2+3i) + \(3+4i\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
-    <p style="text-align: center;">
+  <div class="card shadow solution fc-md" style="display:none">
+    <p class="text-center">
+      `\(2+3\) + \(3+4\)i =` <br>
       `5+7i`
     </p>
   </div>
 
 </div>
 <!-- card 2 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
-    <p style="text-align: center;">
+<div class="fs-card">
+  <div class="card shadow problem fc-md">
+    <p>
       `\(3+5i\) + \(4-3i\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
-    <p style="text-align: center;">
+  <div class="card shadow solution fc-md" style="display:none">
+    <p class="text-center">
+      `\(3+4\) + \(5-3\)i =` <br>
       `7+2i`
     </p>
   </div>
 
 </div>
 <!-- card 3 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
-    <p style="text-align: center;">
+<div class="fs-card">
+  <div class="card shadow problem fc-md">
+    <p>
       `\(4+2i\) - \(3+4i\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
-    <p style="text-align: center;">
+  <div class="card shadow solution fc-md" style="display:none">
+    <p class="text-center">
+      `\(4-3\) + \(2-4\)i =` <br>
       `1-2i`
     </p>
   </div>
 </div>
+</div>
+<div class="row justify-content-center">
 <!-- card 4 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
-    <p style="text-align: center;">
+<div class="fs-card">
+  <div class="card shadow problem fc-md">
+    <p>
       `\(5 - 3i\) - \(6-4i\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
-    <p style="text-align: center;">
+  <div class="card shadow solution fc-md" style="display:none">
+    <p class="text-center">
+      `\(5-6\) + \(-3+4\)i` <br>
       `-1 + i`
     </p>
   </div>
 </div>
 <!-- card 5 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
-    <p style="text-align: center;">
+<div class="fs-card">
+  <div class="card shadow problem fc-md">
+    <p>
       `\(2 + 3i\) xx \(4 + 5i\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
-    <p style="text-align: center;">
+  <div class="card shadow solution fc-md" style="display:none">
+    <p class="text-center">
       `8+10i+12i-15 =` <br>
+      `\(8-15\) + \(10+12\)i =` <br>
       `-7 + 22i`
     </p>
   </div>
 </div>
 <!-- card 6 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
-    <p style="text-align: center;">
+<div class="fs-card">
+  <div class="card shadow problem fc-md">
+    <p>
       `\(4 - 2i\) xx \(5-3i\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
-    <p style="text-align: center;">
+  <div class="card shadow solution fc-md" style="display:none">
+    <p class="text-center">
       `20-12i-10i-6 =` <br>
+      `\(20-6\) + (-12-10\)i =`
       `14 - 22i`
     </p>
   </div>
 </div>
+</div>
+<div class="row justify-content-center">
 <!-- card 7 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-md">
     <p style="text-align: center; font-size: 30px;">
       `(4+3i)/(2+5i) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
-    <p style="text-align: center;">
+  <div class="card shadow solution fc-md" style="display:none">
+    <p class="text-center" style="font-size: 30px;">
       `(4+3i)/(2+5i) xx (2-5i)/(2-5i) =` <br>
       `(8-20i+6i+15)/(4+25)=` <br>
       `23/29 - 14/29 i`
@@ -154,15 +151,15 @@ body {
   </div>
 </div>
 <!-- card 8 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
-    <p style="text-align: center; font-size: 30px">
+<div class="fs-card">
+  <div class="card shadow problem fc-md">
+    <p style="text-align: center; font-size: 30px;">
       `(3+4i)/(4-3i) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
-    <p style="text-align: center;">
+  <div class="card shadow solution fc-md" style="display:none">
+    <p class="text-center" style="font-size: 30px;">
       `(3+4i)/(4-3i) xx (4+3i)/(4+3i)=` <br>
       `(12+9i+16i-12)/(16+9)=` <br>
       `(25i)/25 = i`
@@ -171,20 +168,7 @@ body {
 </div>
 </div>
 </div>
-<script>
-$(document).ready(function(){
-  $("div.fs-card").on({
-    mouseleave: function(){
-      $(this).children(".solution").hide();
-      $(this).children(".problem").show();
-    },
-    click: function(){
-      $(this).children(".solution").show();
-      $(this).children(".problem").hide();
-    }
-  });
-});
-</script>
+<script type="text/javascript" src="../../js/flashCard.js"></script>
 </body>
 </html>
 
