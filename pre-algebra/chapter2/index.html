@@ -49,6 +49,7 @@
         .ps-equ {
             background-color: lightseagreen;
             padding: 20px;
+            font-size: 20px;
         }
         body {
             color: blue;
@@ -99,7 +100,9 @@
         <div class="card border-primary shadow mx-auto">
             <div class="card-header">Fraction Operations Playlist</div>
             <div class="card-body d-flex justify-content-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLw6yYz4fUCAqcmeaXhUBfAYgew-bPG9pX" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" max-width="560" max-height="315" src="https://www.youtube.com/embed/videoseries?list=PLw6yYz4fUCAqcmeaXhUBfAYgew-bPG9pX" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
             <div class="card-footer"></div>
  
@@ -144,6 +147,7 @@
         </p>
     </div>
     </section>
+    <!-- Practice Problems -->
     <section> 
         <div class="container-fluid">
             <div class="row m-5 justify-content-center">
@@ -191,6 +195,16 @@
             <div class="ps-math">
             <span class="ps-equ"> `5/6 - 3/7= (5 xx 7 - 6 xx 3)/(7 xx 6) = 17/42` </span>
             </div>
+    </div>
+</section>
+<section> 
+    <div class="container-fluid">
+        <div class="row m-5 justify-content-center">
+            <div class="col-9">
+                <a class="btn btn-warning" 
+                href="paCh2CardSet2.html" target="_blank" role="button"> <span class="ps-tangerine ps-text-lg font-weight-bold text-primary"> Click for some practice problems </span></a>
+            </div>
+        </div>
     </div>
 </section>
 <section>
@@ -248,11 +262,11 @@
             For example, `4/2 = 2`, so `2` is a factor of `4`. Of course, `1` and `4` are also factors of `4`. As a matter of fact, `4` has three factors: `1`, `2`, and `4`.
         </p>
         <p>
-            Take `9` for example, it has three factors: `1`, `3`, and `9`. Also `6` has factors: `1`, `2`, `3`, and `6`. 
+            Take `9` for another example, it has three factors: `1`, `3`, and `9`. Also `6` has factors: `1`, `2`, `3`, and `6`. 
         </p>
         <p>When two or more integers have a same factor, it is called the common factor. For example, `2` and `4` have two common factors: `1` and `2`. And `4` and `10` have common factors: `1` and `2`.</p>
         <p>Now, you probably notice `1` is a common factor to any two integers. When a fraction whose numerator and denominator has only one common factor of `1`, this fraction is the simplest form.</p>
-        <p> For example, '5/10' is not the simpliest form because they have two common factors: `1` and `5`. But once it is reduced to `1/2` whose numerator and denominator only have one common factor of `1`, it is the simplest.</p>
+        <p> For example, `5/10` is not the simpliest form because they have two common factors: `1` and `5`. But once it is reduced to `1/2` whose numerator and denominator only have one common factor of `1`, it is the simplest.</p>
         <p>
             So, fraction simplification is to reduce a fraction such that the only common factor between its numerator and denominator is `1`. 
         </p>
@@ -260,7 +274,7 @@
             How do you simplified a fraction? We simply divide the numerator and denominator by their none-one common factors until their only common factor is `1`. 
         </p>
         <p>
-            Let's take '5/10' for example. Their none-one common factor is `5`. So 
+            Let's take `5/10` for example. Their none-one common factor is `5`. So 
             <div class="ps-math">
                 <span class="ps-equ">`(5 -: 5)/(10 -: 5) = 1/2`</span>
             </div>
@@ -277,6 +291,16 @@
         </p>
     </div>
 </section>
+<section> 
+    <div class="container-fluid">
+        <div class="row m-5 justify-content-center">
+            <div class="col-9">
+                <a class="btn btn-warning" 
+                href="paCh2CardSet3.html" target="_blank" role="button"> <span class="ps-tangerine ps-text-lg font-weight-bold text-primary"> Click for some practice problems </span></a>
+            </div>
+        </div>
+    </div>
+</section>
 <section>
     <div class="container">
         <h2> H. Improper Fractions and Mixed Numbers</h2>
@@ -284,38 +308,100 @@
             A proper fraction is less than `1`. An improper fraction is bigger than `1` such as `3/2` or `7/5`, that is, its numerator is bigger than its denominator.
         </p>
 
+        <p>A mixed number is the sum of a whole number and a proper fraction such as `2 3/4` which means `2 + 3/4`.</p>
+
+        <p>Mixed numbers and improper fractions are different formats and we can convert one to another.</p>
+
+        <p>Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`2 3/4 = 2 + 3/4 =` <br> `2/1 + 3/4 = (2 xx 4 + 1 xx 3)/(1 xx 4) = 11/4`</span>
+        </div>
+        <p>The above process can be simplified as below:</p>
+            <div class="ps-math">
+                <span class="ps-equ">`2 3/4 = (2 xx 4 + 3)/4 = 11/4`</span>
+            </div>
+        <p>This simplified process is called "around the world".</p>
+
+        <p>Here is one more example:</p>
+            <div class="ps-math">
+                <span class="ps-equ">`3 5/9 = (3 xx 9 + 5)/9 = 32/9`</span>
+            </div>
+        <p>Converting an improper fraction to a mixed number is the reverse process. Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`11/4 = (2 xx 4 + 3)/4 = (2 xx 4)/4 + 3/4 = 2 + 3/4 = 2 3/4`</span>
+        </div>
+        <p>Here is another example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`32/9 = (3 xx 9 + 5)/9 = (3 xx 9)/9 + 5/9 = 3 + 5/9 = 3 5/9`</span>
+        </div>
+    </div>
+</section>
+<section> 
+    <div class="container-fluid">
+        <div class="row m-5 justify-content-center">
+            <div class="col-9">
+                <a class="btn btn-warning" 
+                href="paCh2CardSet4.html" target="_blank" role="button"> <span class="ps-tangerine ps-text-lg font-weight-bold text-primary"> Click for some practice problems </span></a>
+            </div>
+        </div>
     </div>
 </section>
 <section>
     <div class="container">
         <h2> I. Mixed Number Addition</h2>
         <p>
-            A proper fraction is less than `1`. An improper fraction is bigger than `1` such as `3/2` or `7/5`, that is, its numerator is bigger than its denominator.
+           Mixed number addition has two parts: the whole number part and the fraction part. You just need to add the whole numbers and then add the fractions, and finally express the result as a mixed numbers.
         </p>
+        <p>Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`1 1/3 + 2 2/5 = 1 + 2 + 1/3 + 2/5 =` <br><br> `3 + 11/15 = 3 11/15`</span>
+        </div> 
+        <p>If the sum of the fractions is an improper fraction, we will need to convert it to a mixed number and add it to the whole number.</p>
+        <p>Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`1 1/3 + 2 4/5 = 1 + 2 + 1/3 + 4/5 =` <br><br> `3 + 17/15 = 3 + 1 2/15 = 4 2/5`</span>
+        </div> 
     </div>
 </section>
 <section>
     <div class="container">
         <h2> J. Mixed Number Subtraction</h2>
         <p>
-            A proper fraction is less than `1`. An improper fraction is bigger than `1` such as `3/2` or `7/5`, that is, its numerator is bigger than its denominator.
+            Similar to mixed number addition, there are also two parts: one for the whole numbers and the other fractions.
         </p>
+        <p> Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`3 2/3 - 2 3/5 = \(3 - 2\) + (2/3 - 3/5) =` <br><br> `1 + 1/15 = 1 1/5`</span>
+        </div> 
+        <p>But if the result of the fraction part is negative, we will need to take it away from the result of the whole number part.</p>
+        <p> Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`3 1/3 - 2 3/5 = \(3 - 2\) + (1/3 - 3/5) =` <br><br> `1 + \(-4/15\) = 15/15 - 4/15 = 11/15`</span>
+        </div> 
     </div>
 </section>
 <section>
     <div class="container">
         <h2> J. Mixed Number Multiplication</h2>
         <p>
-            A proper fraction is less than `1`. An improper fraction is bigger than `1` such as `3/2` or `7/5`, that is, its numerator is bigger than its denominator.
+            Before we multiply mixed numbers, we have to convert them to improper fractions. Then we just need to multiply the improper fractions, but the result sometimes needs to be converted back to mixed numbers.
         </p>
+        <p> Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`3 1/3 xx 2 3/5 = 10/3 xx 13/5 =` <br><br> `130/15 = 26/3 = 8 2/3`</span>
+
     </div>
 </section>
 <section>
     <div class="container">
-        <h2> J. Mixed Number Division/h2>
+        <h2> J. Mixed Number Division</h2>
         <p>
-            A proper fraction is less than `1`. An improper fraction is bigger than `1` such as `3/2` or `7/5`, that is, its numerator is bigger than its denominator.
+            Similarly, mixed number division is to convert mixed numbers to improper fractions and then use the process of fraction division.
         </p>
+        <p> Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`3 1/3 -: 2 3/5 = 10/3 -: 13/5 =` <br><br> `10/3 xx 5/13 = 50/39 = 1 11/39`</span>
+        </div>
     </div>
 </section>
 </body>
