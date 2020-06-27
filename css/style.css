@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+.ps-tangerine, h2, h1 {
+    font-family: "Tangerine", serif;
+    color: blue;
+  }
+body {
+    background-color: powderblue;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 40px;
+}
