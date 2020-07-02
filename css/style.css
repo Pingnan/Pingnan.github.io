@@ -4,6 +4,7 @@
     font-family: "Tangerine", serif;
     color: blue;
   }
+
 body {
     background-color: powderblue;
 }
@@ -19,3 +20,32 @@ h2 {
     font-size: 40px;
     text-align: center;
 }
+
+.ps-lg {
+    font-size: 50px;
+}
+
+.ps-md {
+    font-size: 40px;
+}
+
+.ps-sm {
+    font-size: 30px;
+}
+
+.ps-bg-lightblue {
+    background-color: lightblue;
+}
+
+.ps-blue {
+    color: blue;
+}
+
+.rounded-bottom {
+    border-radius:1rem!important
+}
+
+a.link {
+    text-decoration: none;
+    color: blue;
+  }
