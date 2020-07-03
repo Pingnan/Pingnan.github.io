@@ -3,85 +3,84 @@
 <head>
   <title>Free Web Textbooks</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine"> 
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- My external .css file -->
+  <link rel="stylesheet" href="css/style.css">
   <style>
-    .w3-tangerine {
-      font-family: "Tangerine", serif;
-    }
-    body {
-      background-color:lightblue;
-    }
   </style>
 </head>
   
 <body>
-  <div class="w3-container w3-tangerine w3-panel">
-    <div class="w3-bar w3-border w3-card-4">
-      <a href="https://pingnan.github.io/index.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Home </span> </a>
-      <a href="https://pingnan.github.io/onlineClasses.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Online Classes </span> </a>
-      <a href="https://pingnan.github.io/webTextbooks.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Web Textbooks </span></a>
-      <a href="https://pingnan.github.io/flashcards.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Flash Cards </span> </a>
-    </div>
-    <div class="w3-center">
-      <p class="w3-jumbo"> Free Web Textbooks </p>
-    </div>
-   <br> 
-   <div class="w3-row w3-center">
-                       
-      <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge">
-        <div class="w3-container"> </div>
-        <img src="https://pingnan.github.io/arithmetic/panda.jpg" alt="free arithmetic textbook" style="width:100%">
-        <div class="w3-container">
-          <p class="w3-center w3-xxxlarge"> Arithmetic </p>
+<!-- Navbar -->
+<div class="card shadow ps-bg-lightblue mx-4">
+  <nav class="navbar navbar-expand-sm">
+    <ul class="navbar-nav ps-tangerine ps-sm">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link ps-blue">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="onlineClasses.html" class="nav-link ps-blue">Online Classes</a>
+      </li>
+      <li class="nav-item">
+        <a href="webTextbooks.html" class="nav-link ps-blue">Web Textbooks </a>
+      </li>
+      <li class="nav-item">
+        <a href="flashcards.html" class="nav-link ps-blue">Flash Cards</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<!-- end of Navbar -->
+<!-- title -->
+<h1> Free Web Textbooks </h1>
+<!-- first row -->
+  <div class="row justify-content-center">
+    <!-- first card -->
+    <div class="card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+        <img src="img/panda.jpg" alt="free arithmetic textbook" style="width:100%">
+        <div class="card-body">
+          <p class="ps-tangerine ps-md"> Arithmetic </p>
         </div>
-       </div>
-      
-       <div class="w3-panel w3-card-4 w3-col l1" > </div> 
-      
-       <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge" >
-        <img src="https://pingnan.github.io/pre-algebra/huski.jpg" alt="free pre-algebra textbook" style="width:100%">
-        <div class="w3-container">
-          <p class="w3-xxxlarge"> Pre-algebra </p>
+    </div>
+   <!-- second card --> 
+    <div class="card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+        <img src="img/huski.jpg" alt="free pre-algebra textbook" style="width:100%">
+        <div class="card-body">
+          <p class="ps-tangerine ps-md"> Pre-algebra </p>
+         </div>
+    </div>    
+    <!-- third card -->
+    <div class="card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+         <img src="img/flyingEagle.jpg" alt="free algebra textbook" style="width:100%">
+         <div class="card-body">
+           <p class="ps-tangerine ps-md"> Algebra </p>
          </div>
         </div>
-      
-      <div class="w3-panel w3-card-4 w3-col l1" > </div>      
-      
-       <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge">
-         <img src="https://pingnan.github.io/algebra/flyingEagle.jpg" alt="free algebra textbook" style="width:100%">
-         <div class="w3-container" style="text-align: center">
-           <p class="w3-xxxlarge"> Algebra </p>
-         </div>                          
-       </div>
-      
-    </div>
-    <br> <br>
-    <div class="w3-row w3-center">
-                       
-      <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge">
-        <div class="w3-container"> </div>
-        <img src="https://pingnan.github.io/geometry/snail.jpg" alt="free geometry textbook" style="width:100%">
-        <div class="w3-container">
-          <p class="w3-center w3-xxxlarge"> Geometry </p>
+<!-- second row -->
+    <div class="row justify-content-center my-4">
+      <!-- fourth card -->
+      <div class="card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+        <img src="img/snail.jpg" alt="free geometry textbook" style="width:100%">
+        <div class="card-body">
+          <p class="ps-tangerine ps-md"> Geometry </p>
         </div>
        </div>
-      
-       <div class="w3-panel w3-card-4 w3-col l1" > </div> 
-      
-       <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge" >
-        <img src="https://pingnan.github.io/pre-calculus/functions.jpg" alt="free pre-calculus textbook" style="width:100%">
-        <div class="w3-container">
-          <p class="w3-xxxlarge"> Pre-calculus </p>
+      <!-- fifth card -->
+      <div class="card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+        <img src="img/functions.jpg" alt="free pre-calculus textbook" style="width:100%">
+        <div class="card-body">
+          <p class="ps-tangerine ps-md"> Pre-calculus </p>
          </div>
-        </div>
-      
-      <div class="w3-panel w3-card-4 w3-col l1" > </div>      
-      
-       <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge">
-         <img src="https://pingnan.github.io/calculus/spaceShuttle.jpg" alt="free calculus textbook" style="width:100%">
-         <div class="w3-container" style="text-align: center">
-           <p class="w3-xxxlarge"> Calculus </p>
+        </div>    
+      <!-- sixth card -->
+      <div class="card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+         <img src="img/spaceShuttle.jpg" alt="free calculus textbook" style="width:100%">
+         <div class="card-body">
+           <p class="ps-tangerine ps-md"> Calculus </p>
          </div>                          
        </div>
       </div>
