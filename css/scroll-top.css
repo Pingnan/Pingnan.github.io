@@ -12,6 +12,7 @@
     right: 0px;
     transition: background-color 1s;
     z-index: 1000;
+    transform: scale(0.7, 0.7);
     }
 #scroll-top:hover {
     cursor: pointer;
