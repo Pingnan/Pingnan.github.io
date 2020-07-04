@@ -15,104 +15,122 @@
     <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
         </script>
-    <!-- Latest compiled and minified CSS -->
+<!-- Bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-<!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- Font awrsome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- Website style -->
+<link rel="stylesheet" href="https://pingnan.github.io/css/style.css">
+<link rel="stylesheet" href="../../css/scroll-top.css">
+<style>
+    p {
+        font-size: 20px;
+        font-family: 'Comic Sans MS', cursive, sans-serife;
+        overflow-wrap: normal;
+    }
+    .ps-math {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    /*    background-color: rgb(82, 124, 82); */
+        padding: 10px;
+        width: 600px;
+        text-align: center;
+        font-size: 30px;
+        color: navy;
+    }
+    .ps-equ {
+        background-color: lightseagreen;
+        padding: 20px;
+        font-size: 20px;
+    }
+    h2 {
+        text-align: left;
+    }
+    .ps-comic {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    .ps-texBbook {
+        width: 100vw;
+        height: 100vh;
+    }
+    .card {
+        background-color: lightblue;
+    }
+    .ps-text-md {
+        font-size: 3rem;
+    }
+    .ps-text-md {
+        font-size: 2rem;
+    }
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    a.dropdown-item:hover {
+        background-color: lightgreen;
+    }
+    a.dropdown-item {
+        color: blue;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    a.btn {
+        color: navy;
+    }
+    
+    ul.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
 
-    <style>
-        p {
-            font-size: 20px;
-            font-family: 'Comic Sans MS', cursive, sans-serife;
-            padding: 20px;
-            overflow-wrap: normal;
-        }
-        .ps-math {
-            display: flex;
-            justify-content: center;
-            margin: 10px;
-        /*    background-color: rgb(82, 124, 82); */
-            padding: 10px;
-            width: 600px;
-            text-align: center;
-            font-size: 30px;
-        }
-        .ps-equ {
-            background-color: lightseagreen;
-            padding: 20px;
-            font-size: 20px;
-        }
-        body {
-            color: blue;
-            width: 900px;
-            background-color: lightblue;
-            margin-left: 20px;
-        }
-        h1 {
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 4rem;
-            font-size: 50px;
-            font-family: 'Tangerine', serif;
-            font-weight: bold;
-        }
-        h2 {
-            font-family: 'Tangerine', serif;
-            font-size: 40px;
-            font-weight: bold;
-            margin-top: 30px;
-            padding: 10px;
-        }
-        .ps-tangerine {
-            font-family: "Tangerine", serif;
-        }
-        .ps-comic {
-            font-family: "Comic Sans MS", cursive, sans-serif;
-        }
-        .ps-texBbook {
-            width: 100vw;
-            height: 100vh;
-        }
-        .card {
-            background-color: lightblue;
-        }
-        .ps-text-md {
-            font-size: 3rem;
-        }
-        .ps-text-md {
-            font-size: 2rem;
-        }
+    .fa-book:hover {
+        color: orange;
+    }
 </style>   
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-    <div class="col">
-    <h1> Chapter II: Fractions</h1>
-    <div class="container">
-        <div class="card border-primary shadow mx-auto">
-            <div class="card-header">Fraction Operations Playlist</div>
-            <div class="card-body d-flex justify-content-center">
-                <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" max-width="560" max-height="315" src="https://www.youtube.com/embed/videoseries?list=PLw6yYz4fUCAqcmeaXhUBfAYgew-bPG9pX" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="card-footer"></div>
- 
+<!-- Table of Contents -->
+<ul class="nav sticky">
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle ps-tangerine ps-sm" data-toggle="dropdown" href="#"><i class="fa fa-book"></i></a>
+        <div class="dropdown-menu ps-bg-lightblue">
+        <a class="dropdown-item" href="#A">A. Simple fraction addition</a>
+        <a class="dropdown-item" href="#B">B. Simple fraction subtraction</a>
+        <a class="dropdown-item" href="#C">C. Fraction addition</a>
+        <a class="dropdown-item" href="#D">D. Fraction subtraction</a>
+        <a class="dropdown-item" href="#E">E. Fraction multiplication</a>
+        <a class="dropdown-item" href="#F">F. Fraction division</a>
+        <a class="dropdown-item" href="#G">G. Fraction simplification</a>
+        <a class="dropdown-item" href="#H">H. Improper fraction & mixed numbers</a>
+        <a class="dropdown-item" href="#I">I. Mixed number addition</a>
+        <a class="dropdown-item" href="#J">J. Mixed number subtraction</a>
+        <a class="dropdown-item" href="#K">K. Mixed number multiplication</a>
+        <a class="dropdown-item" href="#K">L. Mixed number division</a>
         </div>
-    </div>
-    
-    <section>
+    </li>
+</ul>
+<a id="scroll-top"></a>
+<!-- Chapter Title -->
+<div class="row justify-content-center">
+    <div class="col-xs-12">
+        <h1> Chapter II: Fractions</h1>
+        <div class="container">
+            <div class="card border-primary shadow mx-auto">
+                <div class="card-header">Fraction Operations Playlist</div>
+                <div class="card-body d-flex justify-content-center">
+                    <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" width="300" height="200" src="https://www.youtube.com/embed/videoseries?list=PLw6yYz4fUCAqcmeaXhUBfAYgew-bPG9pX" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="card-footer"></div>
+            </div>
+        </div>
+    <br><br>
+<!-- Sectioni A -->
+    <section id="A">
         <div class="container">
         <h2>A. Simple fraction addition</h2>
         <p> Here is the formula for simple fraction addition: </p>
@@ -130,8 +148,8 @@
             </div>
         </div>
     </section>
-
-    <section>
+<!-- Sectioni B -->
+    <section id="B">
         <div class="container">
         <h2>B. Simple fraction subraction</h2>
         <p>
@@ -155,16 +173,16 @@
         <div class="container-fluid">
             <div class="row m-5 justify-content-center">
                 <div class="col-6">
-                    <a class="btn btn-warning" 
-                    href="paCh2CardSet1.html" target="_blank" role="button"> <span class="ps-tangerine ps-text-md font-weight-bold text-primary"> Click for some practice problems </span></a>
+                    <!-- <a class="btn btn-warning" 
+                    href="paCh2CardSet1.html" target="_blank" role="button"> <span class="ps-tangerine ps-text-md font-weight-bold"> Click for some practice problems </span></a> -->
+
+                    <a class="btn btn-warning ps-tangerine ps-sm" 
+                    href="paCh2CardSet1.html" target="_blank" role="button">Click for some practice problems </span></a>
                 </div>
             </div>
         </div>
     </section>
-    </div>
-    </div>
-</div>
-<section>
+<section id="C">
     <div class="container">
         <h2> C. Fraction Additon</h2>
         <p> Here is the formula for fraction addition: </p>
@@ -182,7 +200,7 @@
             </div>
     </div>
 </section>
-<section>
+<section id="D">
     <div class="container">
         <h2> D. Fraction Subtraction</h2>
         <p> Here is the formula for fraction subtraction: </p>
@@ -210,7 +228,7 @@
         </div>
     </div>
 </section>
-<section>
+<section id="E">
     <div class="container">
         <h2> E. Fraction Multiplication</h2>
         <p>Fraction multiplication is really simple. Here is the formula: </p>
@@ -228,7 +246,7 @@
             </div>
     </div>
 </section>
-<section>
+<section id="F">
     <div class="container">
         <h2> F. Fraction Division</h2>
         <p>Fraction division is done by changing the operation to division. Here is the formula: </p>
@@ -256,14 +274,14 @@
         </div>
     </div>
 </section>
-<section>
+<section id="G">
     <div class="container">
         <h2> G. Fraction Simplification</h2>
         <p>
             We know `1/2` has the same value of `2/4`, or `5/10`. They are all half of a unit, but expressed in different ways. Fraction simplification means to find an equivalent (in value) fraction whose numerator and denominator have the smallest possible values. 
         </p>
         <p>
-            For example, `2/4` is simpler than `5/10`, and `1/2` is simpler than `2/4. And `1/2` is the simplest form of all fractions of half a unit. 
+            For example, `2/4` is simpler than `5/10`, and `1/2` is simpler than `2/4`. And `1/2` is the simplest form of all fractions of half a unit. 
         </p>
         <p>
             But how do we know we have reduced a fraction to its simplest form? To answer this question requires us to understand the concept of factors. 
@@ -314,7 +332,7 @@
         </div>
     </div>
 </section>
-<section>
+<section id="H">
     <div class="container">
         <h2> H. Improper Fractions and Mixed Numbers</h2>
         <p>
@@ -359,7 +377,7 @@
         </div>
     </div>
 </section>
-<section>
+<section id="I">
     <div class="container">
         <h2> I. Mixed Number Addition</h2>
         <p>
@@ -376,7 +394,7 @@
         </div> 
     </div>
 </section>
-<section>
+<section id="J">
     <div class="container">
         <h2> J. Mixed Number Subtraction</h2>
         <p>
@@ -403,7 +421,7 @@
         </div>
     </div>
 </section>
-<section>
+<section id="K">
     <div class="container">
         <h2> K. Mixed Number Multiplication</h2>
         <p>
@@ -415,7 +433,7 @@
 
     </div>
 </section>
-<section>
+<section id="L">
     <div class="container">
         <h2> L. Mixed Number Division</h2>
         <p>
@@ -437,6 +455,9 @@
         </div>
     </div>
 </section>
+</div>
+<!-- JQuery for scroll back to top button -->
+<script type="text/javascript" src="../../js/scroll-top.js"></script>
 </body>
 
 </html>
