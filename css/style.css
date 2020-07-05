@@ -38,6 +38,9 @@ h2 {
     font-size: 30px;
 }
 
+.ps-xs {
+    font-size: 20px;
+}
 .ps-bg-lightblue {
     background-color: lightblue;
 }
@@ -53,4 +56,11 @@ h2 {
 a.link {
     text-decoration: none;
     color: blue;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
