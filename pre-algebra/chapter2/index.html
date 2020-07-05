@@ -22,9 +22,12 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <!-- Font awrsome -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- scroll to top js and css files -->
+<script type="text/javascript" src="../../js/scroll-top.js"></script>
+<link rel="stylesheet" href="../../css/scroll-top.css">
 <!-- Website style -->
 <link rel="stylesheet" href="https://pingnan.github.io/css/style.css">
-<link rel="stylesheet" href="../../css/scroll-top.css">
+<!-- page specific style sheet -->
 <style>
     p {
         font-size: 20px;
@@ -84,6 +87,16 @@
     .fa-book:hover {
         color: orange;
     }
+    section {
+        margin-top: 2rem;
+    }
+    p {
+        text-indent: 2rem;
+    }
+    figcaption {
+        color: blue;
+        margin-bottom: 1rem;
+    }
 </style>   
 </head>
 
@@ -104,7 +117,8 @@
         <a class="dropdown-item" href="#I">I. Mixed number addition</a>
         <a class="dropdown-item" href="#J">J. Mixed number subtraction</a>
         <a class="dropdown-item" href="#K">K. Mixed number multiplication</a>
-        <a class="dropdown-item" href="#K">L. Mixed number division</a>
+        <a class="dropdown-item" href="#L">L. Mixed number division</a>
+        <a class="dropdown-item" href="#M">L. Wrap-up</a>
         </div>
     </li>
 </ul>
@@ -112,37 +126,56 @@
 <!-- Chapter Title -->
 <div class="row justify-content-center">
     <!-- Column for text -->
-    <div class="col-xs-12 col-lg-8">
+    <div class="col-xs-12 col-md-10 col-lg-8">
         <h1> Chapter II: Fractions</h1>
         <div class="container">
-            <div class="card border-primary shadow mx-auto">
-                <div class="card-header">Fraction Operations Playlist</div>
-                <div class="card-body d-flex justify-content-center">
-                    <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" width="300" height="200" src="https://www.youtube.com/embed/videoseries?list=PLw6yYz4fUCAqcmeaXhUBfAYgew-bPG9pX" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="card-footer"></div>
-            </div>
+            <iframe class="card shadow" width="400" height="266" src="https://www.youtube.com/embed/videoseries?list=PLw6yYz4fUCAqcmeaXhUBfAYgew-bPG9pX" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-    <br><br>
-<!-- Sectioni A -->
+<!-- Section A -->
 <section id="intro">
     <div class="container">
         <p>
-        Once upon a time, a kindergartener came to me. He was very excited because he just learned addition that day and he wanted to show me. So I asked him what is one apple plus another apple. He answered two apples. Then I asked him what is one banana plus another bannana; he said two bannanas. Then, I asked him, "what is one apple plus one bannana?". He almost said "two", but he paused before making the sound.
+            Once upon a time, a kindergartener came to me. He was very excited because he just learned addition that day and he wanted to show me. So I asked him what is one apple plus another apple. He answered two apples. Then I asked him what is one banana plus another banana; he said two bananas. Then, I asked him, "what is one apple plus one banana?". He almost said "two", but he paused before making the sound.
         </p>
         <p>
-        You see, he realized that in order to add two quantities, they have to be the same thing. This is in essence the problem with adding fractions because almost all the time, at least in math classes, they have different sizes. We can not add `1/2` and `1/3` directly because the former is less than the latter. 
+            You see, he realized that in order to add two quantities, they have to be the same thing. This is in essence the problem with adding fractions because almost all the time, at least in math classes, they have different size. We can not add `1/2` and `1/3` directly because the former is less than the latter. 
         </p>
         <p>
-            Let me give you another example. One dollar plus one quarter is not two dollars nor two quaters. 
+            Let me give you another example. One dollar plus one quarter is not two dollars nor two quarters. We can not add them directly because they have different units. In order to add them, we have to convert one's unit to the other's. For example, we can convert the one dollar to 4 quarters. So one dollar plus one quarter is five quarters. Similarly, we have to do some conversion before we can add fractions.
         </p>
     </div>
 </section>
     <section id="A">
         <div class="container">
         <h2>A. Simple fraction addition</h2>
+        <p>
+            Let us start by adding `1/2` and `1/3`. First, let us understand what they are. That is always a good starting point. The picture below shows what they are.
+        </p>
+        <div class="container text-center">
+            <img src="../img/1-2-plus-1-3-part-1.png" alt="1/2 & 1/3" style="width:300px;">
+            <figcaption>Figure 2.1 `1/2` and `1/3`</figcaption>
+        </div>
+        <p>
+            As you can see, `1/2` means cutting a whole thing, whatever it is, into two equal part and each part is called `1/2`. Similarly, `1/3` means cutting a whole thing into three equal parts, and each part is called `1/3`. And clearly, they have different size. Imagine you have a whole pizza and are <i>very</i> hungry, do you want to share it with one friend or two friends?
+        </p>
+        <p>
+            What do we do then? The trick is to cut them to smaller pieces like shown in the figure below, so that they have something in common. 
+        </p>
+        <div class="container text-center">
+            <img src="../img/1-2-plus-1-3-part-2.png" alt="1/2 & 1/3" style="width:300px;">
+            <figcaption>Figure 2.1 Breaking them down to `1/6`</figcaption>
+        </div>
+        <p>
+            So now `1/2` is cutting down to three `1/6` and `1/3` to two `1/6`. Because they now have a common unit, that is `1/6`, we can just add them up to get five `1/6`. In mathematics, we'd like to write the whole process as below:
+        </p>
+        <div class="ps-math">
+            <span class="ps-equ">`1/2 + 1/3 = 3/6 + 2/6 = 5/6`</span>
+        </div>
+        <p>
+            Now, let us try a couple of more examples, and I am sure you will see a pattern. So let's try adding `1/3` and `1/4`. 
+        </p>
+        <!-- I am here -->
+
         <p> Here is the formula for simple fraction addition: </p>
             <div class="ps-math">
                 <span class="ps-equ">`1/a + 1/b = (b+a)/(a xx b)`</span>
@@ -158,7 +191,7 @@
             </div>
         </div>
     </section>
-<!-- Sectioni B -->
+<!-- Section B -->
     <section id="B">
         <div class="container">
         <h2>B. Simple fraction subraction</h2>
@@ -179,11 +212,12 @@
         </div>
     </section>
     <!-- Practice Problems -->
-    <div class="text-center">
-        <a class="btn btn-warning ps-tangerine ps-sm" 
-        href="paCh2CardSet1.html" target="_blank" role="button">Click for practice problems </span></a>
-    </div>
-
+    <section class="ps-practice">
+        <div class="text-center">
+            <a class="btn btn-warning ps-tangerine ps-sm" 
+            href="paCh2CardSet1.html" target="_blank" role="button">Click for practice problems </span></a>
+        </div>
+    </section>
     <section id="C">
         <br>
         <div class="container">
@@ -221,19 +255,16 @@
             </div>
     </div>
 </section>
-<section> 
-    <div class="container-fluid">
-        <div class="row m-5 justify-content-center">
-            <div class="col-6">
-                <a class="btn btn-warning" 
-                href="paCh2CardSet2.html" target="_blank" role="button"> <span class="ps-tangerine ps-text-md font-weight-bold text-primary"> Click for some practice problems </span></a>
-            </div>
-        </div>
+    <!-- Practice Problems -->
+<section class="ps-practice">
+    <div class="text-center">
+        <a class="btn btn-warning ps-tangerine ps-sm" 
+        href="paCh2CardSet2.html" target="_blank" role="button">Click for practice problems </span></a>
     </div>
 </section>
 <section id="E">
     <div class="container">
-        <h2> E. Fraction Multiplication</h2>
+        <h2> E. Fraction multiplication</h2>
         <p>Fraction multiplication is really simple. Here is the formula: </p>
         <div class="ps-math">
             <span class="ps-equ">`a/b xx c/d = (a xx c)/(b xx d)`</span>
@@ -251,7 +282,7 @@
 </section>
 <section id="F">
     <div class="container">
-        <h2> F. Fraction Division</h2>
+        <h2> F. Fraction division</h2>
         <p>Fraction division is done by changing the operation to division. Here is the formula: </p>
         <div class="ps-math">
             <span class="ps-equ">`a/b -: c/d = a/b xx d/c = (a xx d)/(b xx c)`</span>
@@ -267,19 +298,16 @@
             </div>
     </div>
 </section>
-<section> 
-    <div class="container-fluid">
-        <div class="row m-5 justify-content-center">
-            <div class="col-6">
-                <a class="btn btn-warning" 
-                href="paCh2CardSet3.html" target="_blank" role="button"> <span class="ps-tangerine ps-text-md font-weight-bold text-primary"> Click for some practice problems </span></a>
-            </div>
-        </div>
+<!-- Practice problems -->
+<section class="ps-practice">
+    <div class="text-center">
+        <a class="btn btn-warning ps-tangerine ps-sm" 
+        href="paCh2CardSet3.html" target="_blank" role="button">Click for practice problems </span></a>
     </div>
 </section>
 <section id="G">
     <div class="container">
-        <h2> G. Fraction Simplification</h2>
+        <h2> G. Fraction simplification</h2>
         <p>
             We know `1/2` has the same value of `2/4`, or `5/10`. They are all half of a unit, but expressed in different ways. Fraction simplification means to find an equivalent (in value) fraction whose numerator and denominator have the smallest possible values. 
         </p>
@@ -325,16 +353,13 @@
         </p>
     </div>
 </section>
-<section> 
-    <div class="container-fluid">
-        <div class="row m-5 justify-content-center">
-            <div class="col-6">
-                <a class="btn btn-warning" 
-                href="paCh2CardSet4.html" target="_blank" role="button"> <span class="ps-tangerine ps-text-md font-weight-bold text-primary"> Click for some practice problems </span></a>
-            </div>
+<!-- Practice problems -->
+    <section class="ps-practice">
+        <div class="text-center">
+            <a class="btn btn-warning ps-tangerine ps-sm" 
+            href="paCh2CardSet4.html" target="_blank" role="button">Click for practice problems </span></a>
         </div>
-    </div>
-</section>
+    </section>
 <section id="H">
     <div class="container">
         <h2> H. Improper Fractions and Mixed Numbers</h2>
@@ -370,14 +395,11 @@
         </div>
     </div>
 </section>
-<section> 
-    <div class="container-fluid">
-        <div class="row m-5 justify-content-center">
-            <div class="col-6">
-                <a class="btn btn-warning" 
-                href="paCh2CardSet5.html" target="_blank" role="button"> <span class="ps-tangerine ps-text-md font-weight-bold text-primary"> Click for some practice problems </span></a>
-            </div>
-        </div>
+<!-- Practice problems -->
+<section class="ps-practice">
+    <div class="text-center">
+        <a class="btn btn-warning ps-tangerine ps-sm" 
+        href="paCh2CardSet5.html" target="_blank" role="button">Click for practice problems </span></a>
     </div>
 </section>
 <section id="I">
@@ -414,14 +436,11 @@
         </div> 
     </div>
 </section>
-<section> 
-    <div class="container-fluid">
-        <div class="row m-5 justify-content-center">
-            <div class="col-6">
-                <a class="btn btn-warning" 
-                href="paCh2CardSet6.html" target="_blank" role="button"> <span class="ps-tangerine ps-text-md font-weight-bold text-primary"> Click for some practice problems </span></a>
-            </div>
-        </div>
+<!-- Practice problems -->
+<section class="ps-practice">
+    <div class="text-center">
+        <a class="btn btn-warning ps-tangerine ps-sm" 
+        href="paCh2CardSet6.html" target="_blank" role="button">Click for practice problems </span></a>
     </div>
 </section>
 <section id="K">
@@ -448,19 +467,24 @@
         </div>
     </div>
 </section>
-<section> 
-    <div class="container-fluid">
-        <div class="row m-5 justify-content-center">
-            <div class="col-6">
-                <a class="btn btn-warning" 
-                href="paCh2CardSet7.html" target="_blank" role="button"> <span class="ps-tangerine ps-text-md font-weight-bold text-primary"> Click for some practice problems </span></a>
-            </div>
+    <!-- Practice problems -->
+    <section class="ps-practice">
+        <div class="text-center">
+            <a class="btn btn-warning ps-tangerine ps-sm" 
+            href="paCh2CardSet7.html" target="_blank" role="button">Click for practice problems </span></a>
         </div>
+    </section>
+<section id="M">
+    <div class="container">
+        <h2>M. Wrap-up</h2>
+        <p>
+
+        </p>
     </div>
 </section>
 </div>
 <!-- JQuery for scroll back to top button -->
-<script type="text/javascript" src="../../js/scroll-top.js"></script>
+<!-- <script type="text/javascript" src="../../js/scroll-top.js"></script> -->
 </body>
 
 </html>
