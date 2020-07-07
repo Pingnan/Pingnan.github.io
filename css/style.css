@@ -65,3 +65,14 @@ a.link {
     top: 0;
     z-index: 1000;
   }
+
+  .img-hover-zoom {
+    overflow: hidden;
+  }
+  .img-hover-zoom img {
+    transition: transform 1s ease;
+  }
+  
+  .img-hover-zoom img:hover {
+    transform: scale(1.1);
+  }
