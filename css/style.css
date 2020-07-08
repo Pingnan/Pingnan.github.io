@@ -7,7 +7,7 @@
     color: blue;
   }
 
-.ps-comic {
+.ps-comic, p {
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
@@ -16,9 +16,8 @@ body {
 }
 p {
     color: blue;
-    font-size: 24px;
+    font-size: 20px;
     text-indent: 2rem;
-    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 h1 {
     font-size: 60px;
