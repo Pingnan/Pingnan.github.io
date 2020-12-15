@@ -3,59 +3,97 @@
 <head>
   <title>Free Online Classes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine"> 
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- My external .css file -->
+  <link rel="stylesheet" href="css/style.css">
   <style>
-    .w3-tangerine {
-      font-family: "Tangerine", serif;
-    }
-    body {
-      background-color:lightblue;
+    .card-body ul {
+      list-style-type: none;
     }
   </style>
 </head>
-  
 <body>
-  <div class="w3-container w3-tangerine w3-panel">
-    <div class="w3-bar w3-border w3-card-4">
-      <a href="https://pingnan.github.io/index.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Home </span> </a>
-      <a href="https://pingnan.github.io/onlineClasses.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Online Classes </span> </a>
-      <a href="https://pingnan.github.io/webTextbooks.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Web Textbooks </span></a>
-      <a href="https://pingnan.github.io/flashcards.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Flash Cards </span> </a>
-    </div>
-    <div class="w3-center">
-      <p class="w3-jumbo"> Free Online Classes </p>
-    </div>
-   <br> 
-   <div class="w3-row w3-center">
-                       
-      <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge">
-        <div class="w3-container"> </div>
-        <img src="https://pingnan.github.io/arithmetic/panda.jpg" alt="arithmetic class" style="width:100%">
-        <div class="w3-container">
-          <p class="w3-center w3-xxxlarge"> Arithmetic </p>
-        </div>
-       </div>
-      
-       <div class="w3-panel w3-card-4 w3-col l1" > </div> 
-      
-       <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge" >
-        <img src="https://pingnan.github.io/pre-algebra/huski.jpg" alt="pre-algebra class" style="width:100%">
-        <div class="w3-container">
-          <p class="w3-xxxlarge"> Pre-algebra </p>
-         </div>
-        </div>
-      
-      <div class="w3-panel w3-card-4 w3-col l1" > </div>      
-      
-       <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge">
-         <img src="https://pingnan.github.io/algebra/flyingEagle.jpg" alt="algebra class" style="width:100%">
-         <div class="w3-container" style="text-align: center">
-           <p class="w3-xxxlarge"> Algebra </p>
-         </div>                          
-       </div>
-      
-    </div> 
+
+<!-- Navbar -->
+<div class="sticky card shadow ps-bg-lightblue mx-4 d-flex">
+  <nav class="navbar navbar-expand-sm">
+    <ul class="navbar-nav ps-tangerine ps-sm">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link ps-blue">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="/onlineClasses.html" class="nav-link ps-blue">Online Classes</a>
+      </li>
+      <li class="nav-item">
+        <a href="/webTextbooks.html" class="nav-link ps-blue">Web Textbooks </a>
+      </li>
+      <li class="nav-item">
+        <a href="/flashcards.html" class="nav-link ps-blue">Flashcards</a>
+      </li>
+      <li class="nav-item ">
+        <a href="/poema-academy/index.html" class="nav-link ps-blue">Poema Academy</a>
+      </li>
+      <li class="nav-item ">
+        <a href="/about.html" class="nav-link ps-blue">About</a>
+      </li>
+    </ul>
+  </nav>
   </div>
+  <!-- end of Navbar -->
+<h1> Online Classes </h1>
+
+<div class="row justify-content-center">
+<!-- first card -->
+  <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+    <img src="/img/panda.jpg" alt="arithmetic class" style="width:100%">
+    <div class="card-body">
+      <p class="ps-tangerine ps-md"> Arithmetic </p>
+      <ul class="ps-tangerine ps-sm">
+        <li> Thursday 2 pm </li>
+      </ul>
+    </div>
+  </div>
+  <!-- second card -->
+  <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+    <img src="/img/huski.jpg" alt="pre-algebra class" style="width:100%">
+  <div class="card-body">
+    <p class="ps-tangerine ps-md"> Pre-algebra </p>
+    <ul class="ps-tangerine ps-sm">
+      <li> Tuesday 3 pm </li>
+      <li> Thursday 1 pm </li>
+    </ul>
+    </div>
+  </div> 
+  <!-- third card -->
+  <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+    <img src="/img/flyingEagle.jpg" alt="algebra class" style="width:100%">
+      <div class="card-body">
+        <p class="ps-tangerine ps-md"> Algebra </p>
+        <ul class="ps-tangerine ps-sm">
+          <li> Tuesday 2:15 pm </li>
+        </ul>
+      </div>                          
+  </div>
+  <!-- third card -->
+  <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+    <img src="/img/snail.jpg" alt="Geometry class" style="width:100%">
+      <div class="card-body">
+        <p class="ps-tangerine ps-md"> Geometry </p>
+        <ul class="ps-tangerine ps-sm">
+          <li> Tuesday 11 am </li>
+        </ul>
+      </div>                          
+  </div>
+</div>
+<!-- Contact Us  -->
+<div class="row justify-content-center">
+  <div>
+    <a class="btn btn-primary ps-tangerine ps-sm my-5" style="color:white;" href="mailto:pingnan.shi@gmail.com">Email Dr. Ping</a>
+  </div>
+</div> 
 </body>
 </html>

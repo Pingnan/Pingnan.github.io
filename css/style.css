@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css') */
+
+.ps-tangerine, h2, h1 {
+    font-family: "Tangerine", serif;
+    color: blue;
+  }
+
+.ps-comic, p {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body {
+    background-color: powderblue;
+}
+p {
+    color: blue;
+    font-size: 20px;
+    text-indent: 2rem;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.ps-lg {
+    font-size: 50px;
+}
+
+.ps-md {
+    font-size: 40px;
+}
+
+.ps-sm {
+    font-size: 30px;
+}
+
+.ps-xs {
+    font-size: 20px;
+}
+.ps-bg-lightblue {
+    background-color: lightblue;
+}
+
+.ps-blue {
+    color: blue;
+}
+
+.rounded-bottom {
+    border-radius:1rem!important
+}
+
+a.link {
+    text-decoration: none;
+    color: blue;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .img-hover-zoom {
+    overflow: hidden;
+  }
+  .img-hover-zoom img {
+    transition: transform 1s ease;
+  }
+  
+  .img-hover-zoom img:hover {
+    transform: scale(1.1);
+  }

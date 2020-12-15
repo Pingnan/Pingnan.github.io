@@ -3,89 +3,125 @@
 <head>
   <title>Math Flash Cards</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine"> 
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- My external .css file -->
+  <link rel="stylesheet" href="css/style.css">
   <style>
-    .w3-tangerine {
-      font-family: "Tangerine", serif;
-    }
-    body {
-      background-color:lightblue;
-    }
   </style>
 </head>
   
 <body>
-  <div class="w3-container w3-tangerine w3-panel">
-    <div class="w3-bar w3-border w3-card-4">
-      <a href="https://pingnan.github.io/index.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Home </span> </a>
-      <a href="https://pingnan.github.io/onlineClasses.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Online Classes </span> </a>
-      <a href="https://pingnan.github.io/webTextbooks.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Web Textbooks </span></a>
-      <a href="https://pingnan.github.io/flashcards.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Flash Cards </span> </a>
-    </div>
-    
-    <div class="w3-center">
-      <p class="w3-jumbo"> Math Practice Cards </p>
-    </div>
-   <br> 
-   <div class="w3-row w3-center">
-                       
-      <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge">
-        <div class="w3-container"> </div>
-        <img src="https://pingnan.github.io/arithmetic/panda.jpg" alt="arithmetic flash cards" style="width:100%">
-        <div class="w3-container">
-          <p class="w3-center w3-xxxlarge"> Arithmetic </p>
-        </div>
-       </div>
-      
-       <div class="w3-panel w3-card-4 w3-col l1" > </div> 
-      
-       <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge" >
-        <img src="https://pingnan.github.io/pre-algebra/huski.jpg" alt="Pre-algebra flash cards" style="width:100%">
-        <div class="w3-container">
-          <p class="w3-xxxlarge"> Pre-algebra </p>
-         </div>
-        </div>
-      
-      <div class="w3-panel w3-card-4 w3-col l1" > </div>      
-      
-       <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge">
-         <img src="https://pingnan.github.io/algebra/flyingEagle.jpg" alt="algebra flash cards" style="width:100%">
-         <div class="w3-container" style="text-align: center">
-           <p class="w3-xxxlarge"> Algebra </p>
-         </div>                          
-       </div>
-      
-    </div>
-    <br> <br>
-    <div class="w3-row w3-center">
-                       
-      <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge">
-        <div class="w3-container"> </div>
-        <img src="https://pingnan.github.io/geometry/snail.jpg" alt="geometry flash cards" style="width:100%">
-        <div class="w3-container">
-          <p class="w3-center w3-xxxlarge"> Geometry </p>
-        </div>
-       </div>
-      
-       <div class="w3-panel w3-card-4 w3-col l1" > </div> 
-      
-       <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge" >
-        <img src="https://pingnan.github.io/pre-calculus/functions.jpg" alt="pre-calculus flash cards" style="width:100%">
-        <div class="w3-container">
-          <p class="w3-xxxlarge"> Pre-calculus </p>
-         </div>
-        </div>
-      
-      <div class="w3-panel w3-card-4 w3-col l1" > </div>      
-      
-       <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge">
-         <img src="https://pingnan.github.io/calculus/spaceShuttle.jpg" alt="calculus flash cards" style="width:100%">
-         <div class="w3-container" style="text-align: center">
-           <p class="w3-xxxlarge"> Calculus </p>
-         </div>                          
-       </div>
-      </div>
+<!-- Navbar -->
+<div class="sticky card shadow ps-bg-lightblue mx-4 d-flex">
+  <nav class="navbar navbar-expand-sm">
+    <ul class="navbar-nav ps-tangerine ps-sm">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link ps-blue">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="/onlineClasses.html" class="nav-link ps-blue">Online Classes</a>
+      </li>
+      <li class="nav-item">
+        <a href="/webTextbooks.html" class="nav-link ps-blue">Web Textbooks </a>
+      </li>
+      <li class="nav-item">
+        <a href="/flashcards.html" class="nav-link ps-blue">Flashcards</a>
+      </li>
+      <li class="nav-item ">
+        <a href="/poema-academy/index.html" class="nav-link ps-blue">Poema Academy</a>
+      </li>
+      <li class="nav-item ">
+        <a href="/about.html" class="nav-link ps-blue">About</a>
+      </li>
+    </ul>
+  </nav>
   </div>
+<!-- end of Navbar -->
+    
+<h1> Math Practice Flashcards </h1>
+<div class="row justify-content-center">
+  <!-- first card  -->
+  <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+    <img src="/img/panda.jpg" alt="arithmetic flash cards" style="width:100%">
+    <div class="card-body">
+      <p class="ps-tangerine ps-md"> Arithmetic </p>
+    </div>
+  </div>
+  <!-- second card  -->    
+  <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+    <a href="/pre-algebra/pre-algebraFlashCards.html"> 
+      <img src="/img/huski.jpg" alt="Pre-algebra flash cards" style="width:100%">
+    </a>
+    <div class="card-body">
+      <p class="ps-tangerine ps-md"> Pre-algebra </p>
+    </div>
+  </div>
+  <!-- third card  -->      
+  <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+    <img src="/img/flyingEagle.jpg" alt="algebra flash cards" style="width:100%">
+    <div class="card-body">
+      <p class="ps-tangerine ps-md"> Algebra </p>
+    </div>                          
+  </div>
+</div>
+<!-- second row -->
+<div class="row justify-content-center my-4">
+  <!-- fourth card  -->                           
+  <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+    <img src="/img/snail.jpg" alt="geometry flash cards" style="width:100%">
+    <div class="card-body">
+      <p class="ps-tangerine ps-md"> Geometry </p>
+    </div>
+  </div>
+  <!-- fifth card  -->      
+  <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+    <img src="/img/functions.jpg" alt="pre-calculus flash cards" style="width:100%">
+    <div class="card-body">
+      <p class="ps-tangerine ps-md"> Pre-calculus </p>
+    </div>
+  </div>
+  <!-- six card  -->              
+  <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+    <img src="/img/spaceShuttle.jpg" alt="calculus flash cards" style="width:100%">
+    <div class="card-body">
+      <p class="ps-tangerine ps-md"> Calculus </p>
+    </div>                          
+  </div>
+</div>
+<!-- third row -->
+<div class="row justify-content-center my-4">
+  <!-- seventh card  -->                           
+  <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+    <img src="/img/SAT.jpg" alt="geometry flash cards" style="width:100%">
+    <div class="card-body">
+      <p class="ps-tangerine ps-md"> SAT </p>
+    </div>
+  </div>
+  <!-- eighth card  -->      
+  <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+    <img src="/img/ACT.jpg" alt="pre-calculus flash cards" style="width:100%">
+    <div class="card-body">
+      <p class="ps-tangerine ps-md"> ACT </p>
+    </div>
+  </div>
+  <!-- ninth card  -->              
+  <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+    <img src="/img/TASC.jpg" alt="calculus flash cards" style="width:100%">
+    <div class="card-body">
+      <p class="ps-tangerine ps-md"> TASC </p>
+    </div>                          
+  </div>
+</div>
+  <!-- Contact Us  -->
+<div class="row justify-content-center">
+  <div>
+    <a class="btn btn-primary ps-tangerine ps-sm my-5" style="color:white;" href="mailto:pingnan.shi@gmail.com">Email Dr. Ping</a>
+  </div>
+</div> 
+<!-- footer -->
 </body>
 </html>

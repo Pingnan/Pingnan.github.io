@@ -3,11 +3,17 @@
 <head>
 <title>Completing The Square</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Cache-Control" content="private, no-store" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> </link>
+<meta http-equiv="Cache-Control" content="private, no-store" />
 <link rel="stylesheet" href="https://pingnan.github.io/smallFlashcard.css" type="text/css"> </link>
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+<!-- Bootstrap 4 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- My external .css file -->
+<link rel="stylesheet" href="../../css/flashCard.css" type="text/css"> </link>
+<!-- Utilities for Math symbols and equations -->
 <script>
   MathJax = {
     loader: {load: ['input/asciimath', 'output/chtml']}
@@ -19,46 +25,29 @@
 </script>
 <!-- <script type="text/javascript" src="https://pingnan.github.io/newFlashCard.js"> </script> -->
 <style>
-body {
-    background-color: powderblue;
-}
-.my-tangerine, h4 {
+.my-tangerine, h1, h2 {
   font-family: "Tangerine", serif;
   color: blue;
-}
-.fs-medium {
-  display: flex;
-	width: 300px;
-  height: 200px;
-  margin: 10px;
-  font-size: 20px;
-  justify-content: center;
-  align-items: center;
-}
-.flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 </style>
 </head>
 <!-- Body -->
 <body>
 
-<h2 class="w3-center my-tangerine w3-xxxlarge"> Completing The Square </h2>
-<h4 class="w3-center w3-xxlarge"> Click on a card to see the solution </h4>
+<h1> Completing The Square </h1>
+<h2> Click on a card to see the solution </h2>
 <br>
-<div class="flexbox">
+<div class="row justify-content-center">
 <!-- card 1 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
-    <p style="text-align: center;">
+<div class="fs-card">
+  <div class="card shadow problem fc-md">
+    <p>
       `x^2 + 6x - 7 = 0`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
-    <p style="text-align: center;" class="w3-large">
+  <div class="card shadow solution fc-md" style="display:none">
+    <p class="text-center">
       `x^2 + 6x = 7 ` <br>
       `x^2 + 6x + \(6/2\)^2 = 7 + 3^2` <br>
       `(x+3)^2 = 16` <br>
@@ -70,15 +59,15 @@ body {
 
 </div>
 <!-- card 2 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
-    <p style="text-align: center;">
+<div class="fs-card">
+  <div class="card shadow problem fc-md">
+    <p>
       `x^2 + 2x - 8 = 0`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
-    <p style="text-align: center;" class="w3-large">
+  <div class="card shadow solution fc-md" style="display:none">
+    <p class="text-center">
       `x^2 + 2x = 8` <br>
       `x^2 + 2x + \(2/2\)^2 = 8 + 1` <br>
       `\(x+1\)^2 = 9`<br>
@@ -90,15 +79,15 @@ body {
 
 </div>
 <!-- card 3 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
-    <p style="text-align: center;">
+<div class="fs-card">
+  <div class="card shadow problem fc-md">
+    <p>
       `x^2 - 4x + 3 = 0`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
-    <p style="text-align: center;" class="w3-large">
+  <div class="card shadow solution fc-md" style="display:none">
+    <p class="text-center">
       `x^2-4x = -3` <br>
       `x^2-4x + \(-4/2\)^2 = -3 + \(-2\)^2` <br>
       `\(x-2\)^2 = 1` <br>
@@ -108,16 +97,18 @@ body {
     </p>
   </div>
 </div>
+</div>
+<div class="row justify-content-center">
 <!-- card 4 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
-    <p style="text-align: center;">
+<div class="fs-card">
+  <div class="card shadow problem fc-md">
+    <p>
       `x^2 - 8x - 9 = 0`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
-    <p style="text-align: center;" class="w3-large">
+  <div class="card shadow solution fc-md" style="display:none">
+    <p class="text-center">
       `x^2-8x =9` <br>
       `x^2-8x+\(-8/2\)^2 = 9+\(-4\)^2` <br>
       `\(x-4\)^2 = 25` <br>
@@ -129,19 +120,6 @@ body {
 </div>
 </div>
 </div>
-<script>
-$(document).ready(function(){
-  $("div.fs-card").on({
-    mouseleave: function(){
-      $(this).children(".solution").hide();
-      $(this).children(".problem").show();
-    },
-    click: function(){
-      $(this).children(".solution").show();
-      $(this).children(".problem").hide();
-    }
-  });
-});
-</script>
+<script type="text/javascript" src="../../js/flashCard.js"></script>
 </body>
 </html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractions</title>
+    <!-- Utilities for math symbols and equations -->
+    <script>
+        MathJax = {
+            loader: { load: ['input/asciimath', 'output/chtml'] }
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+        </script>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- Font awrsome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- scroll to top js and css files -->
+<script type="text/javascript" src="../../js/scroll-top.js"></script>
+<link rel="stylesheet" href="../../css/scroll-top.css">
+<!-- Website style -->
+<link rel="stylesheet" href="https://pingnan.github.io/css/style.css">
+<!-- page specific style sheet -->
+<style>
+    p {
+        font-size: 20px;
+        font-family: 'Comic Sans MS', cursive, sans-serife;
+        overflow-wrap: normal;
+    }
+    .ps-math {
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+        color: navy;
+    }
+    .ps-equ {
+        background-color: lightseagreen;
+        padding: 20px;
+        font-size: 20px;
+    }
+    h2 {
+        text-align: left;
+    }
+    .ps-comic {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    .ps-texBbook {
+        width: 100vw;
+        height: 100vh;
+    }
+    .card {
+        background-color: lightblue;
+    }
+    .ps-text-md {
+        font-size: 3rem;
+    }
+    .ps-text-md {
+        font-size: 2rem;
+    }
+
+    a.dropdown-item:hover {
+        background-color: lightgreen;
+    }
+    a.dropdown-item {
+        color: blue;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    a.btn {
+        color: navy;
+    }
+
+    ul.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .fa-book:hover {
+        color: orange;
+    }
+    section {
+        margin-top: 2rem;
+    }
+    p {
+        text-indent: 2rem;
+    }
+    figcaption {
+        color: blue;
+        margin-bottom: 1rem;
+    }
+</style>   
+</head>
+
+<body>
+<!-- Table of Contents -->
+<ul class="nav sticky">
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle ps-tangerine ps-sm" data-toggle="dropdown" href="#"><i class="fa fa-book"></i></a>
+        <div class="dropdown-menu ps-bg-lightblue">
+        <a class="dropdown-item" href="#A">A. Simple fraction addition</a>
+        <a class="dropdown-item" href="#B">B. Simple fraction subtraction</a>
+        <a class="dropdown-item" href="#C">C. Fraction addition</a>
+        <a class="dropdown-item" href="#D">D. Fraction subtraction</a>
+        <a class="dropdown-item" href="#E">E. Fraction multiplication</a>
+        <a class="dropdown-item" href="#F">F. Fraction division</a>
+        <a class="dropdown-item" href="#G">G. Fraction simplification</a>
+        <a class="dropdown-item" href="#H">H. Improper fraction & mixed numbers</a>
+        <a class="dropdown-item" href="#I">I. Mixed number addition</a>
+        <a class="dropdown-item" href="#J">J. Mixed number subtraction</a>
+        <a class="dropdown-item" href="#K">K. Mixed number multiplication</a>
+        <a class="dropdown-item" href="#L">L. Mixed number division</a>
+        <a class="dropdown-item" href="#M">L. Wrap-up</a>
+        </div>
+    </li>
+</ul>
+<a id="scroll-top"></a>
+<!-- Chapter Title -->
+<div class="row justify-content-center">
+    <!-- Column for text -->
+    <div class="col-xs-12 col-md-10 col-lg-8">
+        <h1> Chapter II: Fractions</h1>
+        <div class="container">
+            <iframe class="card shadow" width="400" height="266" src="https://www.youtube.com/embed/videoseries?list=PLw6yYz4fUCAqcmeaXhUBfAYgew-bPG9pX" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+<!-- Section A -->
+<section id="intro">
+    <div class="container">
+        <p>
+            Once upon a time, a kindergartener came to me. He was very excited because he just learned addition that day and he wanted to show me. So I asked him what is one apple plus another apple. He answered two apples. Then I asked him what is one banana plus another banana; he said two bananas. Then, I asked him, "what is one apple plus one banana?". He almost said "two", but he paused before making the sound.
+        </p>
+        <p>
+            You see, he realized that in order to add two quantities, they have to be the same thing. This is in essence the problem with adding fractions because almost all the time, at least in math classes, they have different size. We can not add `1/2` and `1/3` directly because the former is less than the latter. 
+        </p>
+        <p>
+            Let me give you another example. One dollar plus one quarter is not two dollars nor two quarters. We can not add them directly because they have different units. In order to add them, we have to convert one's unit to the other's. For example, we can convert the one dollar to 4 quarters. So one dollar plus one quarter is five quarters. Similarly, we have to do some conversion before we can add fractions.
+        </p>
+    </div>
+</section>
+    <section id="A">
+        <div class="container">
+        <h2>A. Simple fraction addition</h2>
+        <p>
+            Let us start by adding `1/2` and `1/3`. First, let us understand what they are. That is always a good starting point. The picture below shows what they are.
+        </p>
+        <div class="container text-center">
+            <img src="../img/1-2-plus-1-3-part-1.png" alt="1/2 & 1/3" style="width:300px;">
+            <figcaption>Figure 2.1 `1/2` and `1/3`</figcaption>
+        </div>
+        <p>
+            As you can see, `1/2` means cutting a whole thing, whatever it is, into two equal part and each part is called `1/2`. Similarly, `1/3` means cutting a whole thing into three equal parts, and each part is called `1/3`. And clearly, they have different size. Imagine you have a whole pizza and are <i>very</i> hungry, do you want to share it with one friend or two friends?
+        </p>
+        <p>
+            What do we do then? The trick is to cut them to smaller pieces like shown in the figure below, so that they have something in common. 
+        </p>
+        <div class="container text-center">
+            <img src="../img/1-2-plus-1-3-part-2.png" alt="1/2 & 1/3" style="width:300px;">
+            <figcaption>Figure 2.1 Breaking them down to `1/6`</figcaption>
+        </div>
+        <p>
+            So now `1/2` is cutting down to three `1/6` and `1/3` to two `1/6`. Because they now have a common unit, that is `1/6`, we can just add them up to get five `1/6`. In mathematics, we'd like to write the whole process as below:
+        </p>
+        <div class="ps-math">
+            <span class="ps-equ">`1/2 + 1/3 = 3/6 + 2/6 = 5/6`</span>
+        </div>
+        <p>
+            Now, let us try a couple of more examples, and I am sure you will see a pattern. So let's try adding `1/3` and `1/4`. 
+        </p>
+        <!-- I am here -->
+
+        <p> Here is the formula for simple fraction addition: </p>
+            <div class="ps-math">
+                <span class="ps-equ">`1/a + 1/b = (b+a)/(a xx b)`</span>
+            </div>
+        <p>Here `a` and `b` are any non-zero integers.</p>
+        <p> Here are some examples: </p>
+            <div class="ps-math">
+                <span class="ps-equ">`1/2 + 1/3 = (3+2)/(2 xx 3) = 5/6`</span>
+            
+            </div>
+            <div class="ps-math">
+            <span class="ps-equ"> `1/7 + 1/5 = (5+7)/(7 xx 5) = 12/35` </span>
+            </div>
+        </div>
+    </section>
+<!-- Section B -->
+    <section id="B">
+        <div class="container">
+        <h2>B. Simple fraction subraction</h2>
+        <p>
+            Here is the formula for simple fraction subtraction: 
+        </p>
+            <div class="ps-math">
+                <span class="ps-equ">`1/a - 1/b = (b-a)/(a xx b)`</span>
+            </div>
+            <p> Here `a` and `b` are any non-zero integers.</p>
+        <p> Here are some examples: </p>
+            <div class="ps-math text-center">
+                <span class="ps-equ">`1/2 - 1/3 = (3-2)/(2 xx 3) = 1/6`</span>
+            </div>
+            <div class="ps-math text-center">
+                <span class="ps-equ">`1/5 - 1/7 = (7-5)/(7 xx 5) = 2/35`</span>
+            </div>
+        </div>
+    </section>
+    <!-- Practice Problems -->
+    <section class="ps-practice">
+        <div class="text-center">
+            <a class="btn btn-warning ps-tangerine ps-sm" 
+            href="paCh2CardSet1.html" target="_blank" role="button">Click for practice problems </span></a>
+        </div>
+    </section>
+    <section id="C">
+        <br>
+        <div class="container">
+            <h2> C. Fraction Additon</h2>
+            <p> Here is the formula for fraction addition: </p>
+                <div class="ps-math">
+                    <span class="ps-equ">`a/b + c/d = (a xx d + b xx c)/(b xx d)`</span>
+                </div>
+            <p>Here `a`, `b`, `c`, and `d` can be any non-zero integers. `a xx d + b xx c` is the so-called cross multiplication.</p>
+            <p> Here are some examples: </p>
+                <div class="ps-math">
+                    <span class="ps-equ">`2/3 + 4/5 = (2 xx 5 + 3 xx 4)/(3 xx 5) = 22/15`</span>
+                
+                </div>
+                <div class="ps-math">
+                <span class="ps-equ"> `3/7 + 5/6 = (3 xx 6 + 7 xx 5)/(7 xx 6) = 53/42` </span>
+                </div>
+        </div>
+    </section>
+<section id="D">
+    <div class="container">
+        <h2> D. Fraction Subtraction</h2>
+        <p> Here is the formula for fraction subtraction: </p>
+            <div class="ps-math">
+                <span class="ps-equ">`a/b - c/d = (a xx d - b xx c)/(b xx d)`</span>
+            </div>
+        <p>Here `a`, `b`, `c`, and `d` can be any non-zero integers. You can see the process for subtraction is similar to that for addition. </p>
+        <p> Here are some examples: </p>
+            <div class="ps-math">
+                <span class="ps-equ">`2/3 - 4/5 = (2 xx 5 - 3 xx 4)/(3 xx 5) = - 2/15`</span>
+            
+            </div>
+            <div class="ps-math">
+            <span class="ps-equ"> `5/6 - 3/7= (5 xx 7 - 6 xx 3)/(7 xx 6) = 17/42` </span>
+            </div>
+    </div>
+</section>
+    <!-- Practice Problems -->
+<section class="ps-practice">
+    <div class="text-center">
+        <a class="btn btn-warning ps-tangerine ps-sm" 
+        href="paCh2CardSet2.html" target="_blank" role="button">Click for practice problems </span></a>
+    </div>
+</section>
+<section id="E">
+    <div class="container">
+        <h2> E. Fraction multiplication</h2>
+        <p>Fraction multiplication is really simple. Here is the formula: </p>
+        <div class="ps-math">
+            <span class="ps-equ">`a/b xx c/d = (a xx c)/(b xx d)`</span>
+        </div>
+        <p>Here `a`, `b`, `c`, and `d` can be any non-zero integers.</p>
+        <p> Here are some examples: </p>
+            <div class="ps-math">
+                <span class="ps-equ">`2/3 xx 4/5 = (2 xx 4)/(3 xx 5) = 8/15`</span>
+            
+            </div>
+            <div class="ps-math">
+                <span class="ps-equ"> `5/6 xx 3/7= (5 xx 3)/(7 xx 6) = 17/42` </span>
+            </div>
+    </div>
+</section>
+<section id="F">
+    <div class="container">
+        <h2> F. Fraction division</h2>
+        <p>Fraction division is done by changing the operation to division. Here is the formula: </p>
+        <div class="ps-math">
+            <span class="ps-equ">`a/b -: c/d = a/b xx d/c = (a xx d)/(b xx c)`</span>
+        </div>
+        <p>Here `a`, `b`, `c`, and `d` can be any non-zero integers. `d/c` is called the reciprical of `c/d`. </p>
+        <p> Here are some examples: </p>
+            <div class="ps-math">
+                <span class="ps-equ">`2/3 -: 4/5 = 2/3 xx 5/4 = 10/12`</span>
+            
+            </div>
+            <div class="ps-math">
+                <span class="ps-equ"> `5/6 -: 3/7= 5/6 xx 7/3 = 35/18` </span>
+            </div>
+    </div>
+</section>
+<!-- Practice problems -->
+<section class="ps-practice">
+    <div class="text-center">
+        <a class="btn btn-warning ps-tangerine ps-sm" 
+        href="paCh2CardSet3.html" target="_blank" role="button">Click for practice problems </span></a>
+    </div>
+</section>
+<section id="G">
+    <div class="container">
+        <h2> G. Fraction simplification</h2>
+        <p>
+            We know `1/2` has the same value of `2/4`, or `5/10`. They are all half of a unit, but expressed in different ways. Fraction simplification means to find an equivalent (in value) fraction whose numerator and denominator have the smallest possible values. 
+        </p>
+        <p>
+            For example, `2/4` is simpler than `5/10`, and `1/2` is simpler than `2/4`. And `1/2` is the simplest form of all fractions of half a unit. 
+        </p>
+        <p>
+            But how do we know we have reduced a fraction to its simplest form? To answer this question requires us to understand the concept of factors. 
+        </p>
+        <p>
+            Let's assume we have a positive integer `n`, and `n/a` is another positive integer. Then `a` is called a factor of `n`. 
+        </p>
+        <p>
+            For example, `4/2 = 2`, so `2` is a factor of `4`. Of course, `1` and `4` are also factors of `4`. As a matter of fact, `4` has three factors: `1`, `2`, and `4`.
+        </p>
+        <p>
+            Take `9` for another example, it has three factors: `1`, `3`, and `9`. Also `6` has factors: `1`, `2`, `3`, and `6`. 
+        </p>
+        <p>When two or more integers have a same factor, it is called the common factor. For example, `2` and `4` have two common factors: `1` and `2`. And `4` and `10` have common factors: `1` and `2`.</p>
+        <p>Now, you probably notice `1` is a common factor to any two integers. When a fraction whose numerator and denominator has only one common factor of `1`, this fraction is the simplest form.</p>
+        <p> For example, `5/10` is not the simpliest form because they have two common factors: `1` and `5`. But once it is reduced to `1/2` whose numerator and denominator only have one common factor of `1`, it is the simplest.</p>
+        <p>
+            So, fraction simplification is to reduce a fraction such that the only common factor between its numerator and denominator is `1`. 
+        </p>
+        <p>
+            How do you simplified a fraction? We simply divide the numerator and denominator by their none-one common factors until their only common factor is `1`. 
+        </p>
+        <p>
+            Let's take `5/10` for example. Their none-one common factor is `5`. So 
+            <div class="ps-math">
+                <span class="ps-equ">`(5 -: 5)/(10 -: 5) = 1/2`</span>
+            </div>
+        </p>
+        <p>
+            Another example is '6/12'. We can either do this:
+            <div class="ps-math">
+                <span class="ps-equ">`(6 -: 6)/(12 -: 6) = 1/2`</span>
+            </div>
+        <p>Or, we can first divide by `2` and then by `3` as below:</p> 
+            <div class="ps-math">
+                <span class="ps-equ">`(6 -: 2)/(12 -: 2) = (3 -: 3)/(6 -: 3) = 1/2`</span>
+            </div>
+        </p>
+    </div>
+</section>
+<!-- Practice problems -->
+    <section class="ps-practice">
+        <div class="text-center">
+            <a class="btn btn-warning ps-tangerine ps-sm" 
+            href="paCh2CardSet4.html" target="_blank" role="button">Click for practice problems </span></a>
+        </div>
+    </section>
+<section id="H">
+    <div class="container">
+        <h2> H. Improper Fractions and Mixed Numbers</h2>
+        <p>
+            A proper fraction is less than `1`. An improper fraction is bigger than `1` such as `3/2` or `7/5`, that is, its numerator is bigger than its denominator.
+        </p>
+
+        <p>A mixed number is the sum of a whole number and a proper fraction such as `2 3/4` which means `2 + 3/4`.</p>
+
+        <p>Mixed numbers and improper fractions are different formats and we can convert one to another.</p>
+
+        <p>Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`2 3/4 = 2 + 3/4 =` <br><br> `2/1 + 3/4 = (2 xx 4 + 1 xx 3)/(1 xx 4) = 11/4`</span>
+        </div>
+        <p>The above process can be simplified as below:</p>
+            <div class="ps-math">
+                <span class="ps-equ">`2 3/4 = (2 xx 4 + 3)/4 = 11/4`</span>
+            </div>
+        <p>This simplified process is called "around the world".</p>
+
+        <p>Here is one more example:</p>
+            <div class="ps-math">
+                <span class="ps-equ">`3 5/9 = (3 xx 9 + 5)/9 = 32/9`</span>
+            </div>
+        <p>Converting an improper fraction to a mixed number is the reverse process. Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`11/4 = (2 xx 4 + 3)/4 = (2 xx 4)/4 + 3/4 = 2 + 3/4 = 2 3/4`</span>
+        </div>
+        <p>Here is another example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`32/9 = (3 xx 9 + 5)/9 = (3 xx 9)/9 + 5/9 = 3 + 5/9 = 3 5/9`</span>
+        </div>
+    </div>
+</section>
+<!-- Practice problems -->
+<section class="ps-practice">
+    <div class="text-center">
+        <a class="btn btn-warning ps-tangerine ps-sm" 
+        href="paCh2CardSet5.html" target="_blank" role="button">Click for practice problems </span></a>
+    </div>
+</section>
+<section id="I">
+    <div class="container">
+        <h2> I. Mixed Number Addition</h2>
+        <p>
+           Mixed number addition has two parts: the whole number part and the fraction part. You just need to add the whole numbers and then add the fractions, and finally express the result as a mixed numbers.
+        </p>
+        <p>Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`1 1/3 + 2 2/5 = 1 + 2 + 1/3 + 2/5 =` <br><br> `3 + 11/15 = 3 11/15`</span>
+        </div> 
+        <p>If the sum of the fractions is an improper fraction, we will need to convert it to a mixed number and add it to the whole number.</p>
+        <p>Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`1 1/3 + 2 4/5 = 1 + 2 + 1/3 + 4/5 =` <br><br> `3 + 17/15 = 3 + 1 2/15 = 4 2/5`</span>
+        </div> 
+    </div>
+</section>
+<section id="J">
+    <div class="container">
+        <h2> J. Mixed Number Subtraction</h2>
+        <p>
+            Similar to mixed number addition, there are also two parts: one for the whole numbers and the other fractions.
+        </p>
+        <p> Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`3 2/3 - 2 3/5 = \(3 - 2\) + (2/3 - 3/5) =` <br><br> `1 + 1/15 = 1 1/5`</span>
+        </div> 
+        <p>But if the result of the fraction part is negative, we will need to take it away from the result of the whole number part.</p>
+        <p> Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`3 1/3 - 2 3/5 = \(3 - 2\) + (1/3 - 3/5) =` <br><br> `1 + \(-4/15\) = 15/15 - 4/15 = 11/15`</span>
+        </div> 
+    </div>
+</section>
+<!-- Practice problems -->
+<section class="ps-practice">
+    <div class="text-center">
+        <a class="btn btn-warning ps-tangerine ps-sm" 
+        href="paCh2CardSet6.html" target="_blank" role="button">Click for practice problems </span></a>
+    </div>
+</section>
+<section id="K">
+    <div class="container">
+        <h2> K. Mixed Number Multiplication</h2>
+        <p>
+            Before we multiply mixed numbers, we have to convert them to improper fractions. Then we just need to multiply the improper fractions, but the result sometimes needs to be converted back to mixed numbers.
+        </p>
+        <p> Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`3 1/3 xx 2 3/5 = 10/3 xx 13/5 =` <br><br> `130/15 = 26/3 = 8 2/3`</span>
+
+    </div>
+</section>
+<section id="L">
+    <div class="container">
+        <h2> L. Mixed Number Division</h2>
+        <p>
+            Similarly, mixed number division is to convert mixed numbers to improper fractions and then use the process of fraction division.
+        </p>
+        <p> Here is an example:</p>
+        <div class="ps-math">
+            <span class="ps-equ">`3 1/3 -: 2 3/5 = 10/3 -: 13/5 =` <br><br> `10/3 xx 5/13 = 50/39 = 1 11/39`</span>
+        </div>
+    </div>
+</section>
+    <!-- Practice problems -->
+    <section class="ps-practice">
+        <div class="text-center">
+            <a class="btn btn-warning ps-tangerine ps-sm" 
+            href="paCh2CardSet7.html" target="_blank" role="button">Click for practice problems </span></a>
+        </div>
+    </section>
+<section id="M">
+    <div class="container">
+        <h2>M. Wrap-up</h2>
+        <p>
+
+        </p>
+    </div>
+</section>
+</div>
+<!-- JQuery for scroll back to top button -->
+<!-- <script type="text/javascript" src="../../js/scroll-top.js"></script> -->
+</body>
+
+</html>

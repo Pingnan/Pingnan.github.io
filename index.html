@@ -1,80 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Poema Academy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine"> 
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <style>
-    .w3-tangerine {
-      font-family: "Tangerine", serif;
-    }
-    .w3-bold {
-      font-weight: bold;
-    }
-    body {
-      background-color:lightblue;
-    }
-    a.link {
-      text-decoration: none;
-      color: blue;
-    }
-  </style>
+<title>Poema Academy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- My external .css file -->
+<link rel="stylesheet" href="/css/style.css">
+<style>
+
+</style>
+<!-- Favicon -->
+<link rel="icon" href="/img/favicon.png" type="image/png" sizes="16x16">
 </head>
   
 <body>
-  <div class="w3-container w3-tangerine w3-panel">
-    <div class="w3-bar w3-border w3-card-2">
-      <a href="https://pingnan.github.io/index.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Home </span> </a>
-      <a href="https://pingnan.github.io/onlineClasses.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Online Classes </span> </a>
-      <a href="https://pingnan.github.io/webTextbooks.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Web Textbooks </span></a>
-      <a href="https://pingnan.github.io/flashcards.html" class="w3-bar-item w3-button w3-hover-light-blue"> <span class="w3-xxlarge"> Flash Cards </span> </a>
-    </div>
+  <!-- Navbar -->
+  <div class="sticky card shadow ps-bg-lightblue mx-4 d-flex">
+  <nav class="navbar navbar-expand-sm">
+    <ul class="navbar-nav ps-tangerine ps-sm">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link ps-blue">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="/onlineClasses.html" class="nav-link ps-blue">Online Classes</a>
+      </li>
+      <li class="nav-item">
+        <a href="/webTextbooks.html" class="nav-link ps-blue">Web Textbooks </a>
+      </li>
+      <li class="nav-item">
+        <a href="/flashcards.html" class="nav-link ps-blue">Flashcards</a>
+      </li>
+      <li class="nav-item ">
+        <a href="/poema-academy/index.html" class="nav-link ps-blue">Poema Academy</a>
+      </li>
+      <li class="nav-item ">
+        <a href="/about.html" class="nav-link ps-blue">About</a>
+      </li>
+    </ul>
+  </nav>
+  </div>
     
-    <div class="w3-center">
-      <p class="w3-jumbo w3-bold"> Poema Academy </p>
-      <p class="w3-xxxlarge"> Free Classical Math Education for Every Child </p>
-    </div>
- <br> 
-    <div class="w3-row w3-center">
-                       
-      <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge">
-        <div class="w3-container"> </div>
-        <a href="https://pingnan.github.io/onlineClasses.html"> <img src="onlineClasses-profile.jpg" alt="online classes" style="width:100%"> </a>
-        <div class="w3-container">
-          <p class="w3-center w3-xxxlarge"> Free online classes </a> </p>
-        </div>
-       </div>
-      
-       <div class="w3-panel w3-card-4 w3-col l1" > </div> 
-      
-       <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge" >
-        <a href="https://pingnan.github.io/webTextbooks.html"> <img src="textbooks-profile.jpg" alt="Textbooks" style="width:100%"> </a>
-        <div class="w3-container">
-          <p class="w3-xxxlarge"> Free Web Textbooks </a> </p>
-         </div>
-        </div>
-      
-      <div class="w3-panel w3-card-4 w3-col l1" > </div>      
-      
-       <div class="w3-card-4 w3-col l3 w3-border w3-round-xlarge">
-         <a href="https://pingnan.github.io/flashcards.html"> <img src="flashcards-profile.jpg" alt="Flash Cards" style="width:100%"> </a>
-         <div class="w3-container" style="text-align: center">
-           <p class="w3-xxxlarge">  Free Practice Flash Cards  </p>
-         </div>                          
-       </div>
-      
+  <h1> Poema Institute </h1>
+  <h2> Free Classical Math Education for Every Child </h2>
+  <div class="row justify-content-center"> 
+  <!-- first card -->
+    <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+      <a href="https://pingnan.github.io/onlineClasses.html"> <img class="card-img-top" src="/img/onlineClasses-profile.jpg" alt="online classes" style="width:100%"> </a>
+      <div class="card-body">
+        <p class="ps-tangerine ps-md"> Online classes </a> </p>
       </div>
     </div>
-  
-  <div class="w3-container w3-panel w3-tangerine w3-row"> <!-- the footer -->
-    <p class="w3-xxlarge w3-center"> &copy 2020 Poema Media </p>
+  <!-- second card -->
+    <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+      <a href="https://pingnan.github.io/webTextbooks.html"> <img src="/img/textbooks-profile.jpg" alt="Textbooks" style="width:100%"> </a>
+      <div class="card-body">
+        <p class="ps-tangerine ps-md"> Free web textbooks </a> </p>
+      </div>
+    </div>
+  <!-- third card -->      
+    <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+        
+        <a href="https://pingnan.github.io/flashcards.html"> <img src="/img/flashcards-profile.jpg" alt="Flash Cards" style="width:100%"> </a>
+        <div class="card-body">
+          <p class="ps-tangerine ps-md">  Free flashcards  </p>
+        </div>
+    </div>                          
+  </div>
+  <br><br>
+  <h2> Micro-schools </h2>
+  <div class="row justify-content-center">
+  <!-- fourth card -->      
+    <div class="img-hover-zoom card shadow ps-bg-lightblue mx-4 my-1 rounded-bottom" style="width: 400px">
+      <a href="poema-academy/index.html"> <img src="/img/sun flower.jpg" alt="Sun flower" style="width:100%"> </a>
+      <div class="card-body">
+        <p class="ps-tangerine ps-md"> Poema Academy of Classical Mathematics </p>
+      </div>
+    </div>
+  </div>                     
+  <!-- Contact Us  -->
+  <div class="row justify-content-center">
+    <div>
+      <a class="btn btn-primary ps-tangerine ps-sm my-5" style="color:white;" href="mailto:pingnan.shi@gmail.com">Email Dr. Ping</a>
+    </div>
+  </div> 
+  <div class="row justify-content-center"> 
+  <div id="amznCharityBanner"><script type="text/javascript">(function() {var iFrame = document.createElement('iframe'); iFrame.style.display = 'none'; iFrame.style.border = "none"; iFrame.width = 310; iFrame.height = 256; iFrame.setAttribute && iFrame.setAttribute('scrolling', 'no'); iFrame.setAttribute('frameborder', '0'); setTimeout(function() {var contents = (iFrame.contentWindow) ? iFrame.contentWindow : (iFrame.contentDocument.document) ? iFrame.contentDocument.document : iFrame.contentDocument; contents.document.open(); contents.document.write(decodeURIComponent("%3Cdiv%20id%3D%22amznCharityBannerInner%22%3E%3Ca%20href%3D%22https%3A%2F%2Fsmile.amazon.com%2Fch%2F83-1430203%22%20target%3D%22_blank%22%3E%3Cdiv%20class%3D%22text%22%20height%3D%22%22%3E%3Cdiv%20class%3D%22support-wrapper%22%3E%3Cdiv%20class%3D%22support%22%20style%3D%22font-size%3A%2025px%3B%20line-height%3A%2028px%3B%20margin-top%3A%2015px%3B%20margin-bottom%3A%2015px%3B%22%3ESupport%20%3Cspan%20id%3D%22charity-name%22%20style%3D%22display%3A%20inline-block%3B%22%3EPoema%20Institute%20Inc.%3C%2Fspan%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cp%20class%3D%22when-shop%22%3EWhen%20you%20shop%20at%20%3Cb%3Esmile.amazon.com%2C%3C%2Fb%3E%3C%2Fp%3E%3Cp%20class%3D%22donates%22%3EAmazon%20donates.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cstyle%3E%23amznCharityBannerInner%7Bbackground-image%3Aurl(https%3A%2F%2Fm.media-amazon.com%2Fimages%2FG%2F01%2Fx-locale%2Fpaladin%2Fcharitycentral%2Fbanner-background-image._CB485922134_.png)%3Bwidth%3A300px%3Bheight%3A250px%3Bposition%3Arelative%7D%23amznCharityBannerInner%20a%7Bdisplay%3Ablock%3Bwidth%3A100%25%3Bheight%3A100%25%3Bposition%3Arelative%3Bcolor%3A%23000%3Btext-decoration%3Anone%7D.text%7Bposition%3Aabsolute%3Btop%3A20px%3Bleft%3A15px%3Bright%3A15px%3Bbottom%3A100px%7D.support-wrapper%7Boverflow%3Ahidden%3Bmax-height%3A86px%7D.support%7Bfont-family%3AArial%2Csans%3Bfont-weight%3A700%3Bline-height%3A28px%3Bfont-size%3A25px%3Bcolor%3A%23333%3Btext-align%3Acenter%3Bmargin%3A0%3Bpadding%3A0%3Bbackground%3A0%200%7D.when-shop%7Bfont-family%3AArial%2Csans%3Bfont-size%3A15px%3Bfont-weight%3A400%3Bline-height%3A25px%3Bcolor%3A%23333%3Btext-align%3Acenter%3Bmargin%3A0%3Bpadding%3A0%3Bbackground%3A0%200%7D.donates%7Bfont-family%3AArial%2Csans%3Bfont-size%3A15px%3Bfont-weight%3A400%3Bline-height%3A21px%3Bcolor%3A%23333%3Btext-align%3Acenter%3Bmargin%3A0%3Bpadding%3A0%3Bbackground%3A0%200%7D%3C%2Fstyle%3E")); contents.document.close(); iFrame.style.display = 'block';}); document.getElementById('amznCharityBanner').appendChild(iFrame); })(); </script></div>
+</div>
+  <br><br>
+  <div class="card-footer ps-bg-lightblue mx-4"> <!-- the footer -->
+    <p class="ps-tangerine ps-sm"> &copy 2020 Poema Media </p>
     <a href="https://www.mathjax.org">
-      <img title="Powered by MathJax"
+      <img class="mx-4" title="Powered by MathJax"
       src="https://www.mathjax.org/badge/badge.gif"
       border="0" alt="Powered by MathJax" />
     </a>
   </div>
-</div>
 </body>
 </html>

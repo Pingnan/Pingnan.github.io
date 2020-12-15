@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Derivative of Polynomial Functions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> </link> -->
+<!-- Bootstrap files -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- Files for displaying math symbols -->
+<script>
+  MathJax = {
+    loader: {load: ['input/asciimath', 'output/chtml']}
+  }
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+</script>
+<!-- CSS -->
+<link rel="stylesheet" href="../../css/flashCard.css" type="text/css"> </link>
+<link rel="stylesheet" href="../../css/style.css" type="text/css"> </link>
+<style>
+body {
+    background-color: powderblue;
+}
+.ps-tangerine, h2, h1 {
+  font-family: "Tangerine", serif;
+  color: blue;
+}
+.fc-sm:hover {
+  background-color: lightgreen;
+  }
+.fs-card {
+    color: blue;
+}
+.rule {
+    background-color: aquamarine;
+    color: blue;
+}
+</style>
+</head>
+<!-- Body -->
+<body>
+
+<h1> Derivatives of Polynomial Functions </h1>
+<h2> (Click on a card to see the solution) </h2>
+<!-- First Row -->
+<div class="row justify-content-center">
+<!-- card 1 -->
+    <div class="fs-card">
+        <div class="card shadow problem fc-md">
+            `y = -x^2 + 3` <br>
+            `(dy)/(dx) = ?` <br>
+        </div>
+
+        <div class="card shadow solution fc-md" style="display:none">
+            `y^' = (-x^2)^' + (3)^'` <br>
+            ` = -\(x^2\)^' + 0` <br>
+            ` = -2x`
+        </div>
+    </div>
+    <!-- card 2 -->
+    <div class="fs-card">
+        <div class="card shadow problem fc-md">
+            `y = x^3/3 - x` <br>
+            `(dy)/(dx) = ?` <br>
+        </div>
+
+        <div class="card shadow solution fc-md" style="display:none">
+            `(dy)/(dx) = \(x^3/3\)^' - \(x\)^'` <br>
+            `=(3x^2)/3 - 1` <br>
+            `= x^2 -1`
+        </div>
+    </div>  
+    <!-- card 3 -->
+    <div class="fs-card">
+        <div class="card shadow problem fc-md">
+            `y = x^3/3 - x^2/2 + 3x - 5` <br>
+            `(dy)/(dx) = ?` <br>
+        </div>
+
+        <div class="card shadow solution fc-md" style="display:none">
+            `(dy)/(dx) = \(x^3/3\)^' - \(x^2/2\)^' + \(3x\)^' - \(5\)^'` <br>
+            ` = \(x^3\)^'/3 - \(x^2\)^'/2 + 3\(x\)^' - 0` <br>
+            ` = (3x^2)/3 - (2x)/2 + 3` <br>
+            ` = x^2 - x + 3`
+        </div>
+    </div>    
+</div> 
+<div class="row justify-content-center">
+    <!-- Rule 1 -->
+    <div class="rule card shadow col-10 col-lg-4 py-4 my-2 mx-2">
+        <strong>RULE 1 Derivative of a Constant Function</strong> <br>
+        <span>If `f` is the function with the constant value `c`, then </span> <br>
+        `(df)/(dx) = d/(dx)\(c\) = \(c\)^' = 0`
+    </div>
+    <!-- Rule 2 -->
+    <div class="rule card shadow col-10 col-lg-4 py-4 my-2 mx-2">
+        <strong>RULE 2 Power Rule for Positive Integer Powers of `x`</strong> <br>
+        <span>If `n` is a positive integer, then </span> <br>
+        `(d)/(dx)\(x^n\) = nx^(n-1)`
+    </div>
+    <!-- Rule 3 --> 
+    <div class="rule card shadow col-10 col-lg-4 py-4 my-2 mx-2">
+        <strong>RULE 3 The Constant Multiple Rule</strong> <br>
+        <span>If `u` is a differentiable function of `x` and `c` is a constant, then </span> <br>
+        `(d)/(dx)\(cu\) = c(du)/(dx)`
+    </div>
+    <!-- Rule 4 --> 
+    <div class="rule card shadow col-10 col-lg-4 py-4 my-2 mx-2">
+        <strong>RULE 4 The Sum and Difference Rule</strong> <br>
+        <span>If `u` and `v` are differentiable functions of `x`, then </span> <br>
+        `(d)/(dx)\(u +- v\) = (du)/(dx) +- (dv)/(dx)`
+    </div>
+</div>
+
+</div>
+<script type="text/javascript" src="../../js/flashCard.js"></script>
+</body>
+</html>

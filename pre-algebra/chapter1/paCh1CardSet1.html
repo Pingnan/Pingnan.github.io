@@ -3,9 +3,16 @@
 <head>
 <title>Pre-algebra Simple Fraction Operation Flash Cards</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> </link>
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+<!-- Bootstrap 4 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- My external .css file -->
+<link rel="stylesheet" href="../../css/flashCard.css" type="text/css"> </link>
+<link rel="stylesheet" href="../../css/style.css">
+<!-- Utilities for math symbols and equations -->
 <script>
   MathJax = {
     loader: {load: ['input/asciimath', 'output/chtml']}
@@ -15,50 +22,45 @@
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
 </script>
-<!-- <script type="text/javascript" src="https://pingnan.github.io/newFlashCard.js"> </script> -->
 <style>
   body {
       background-color: powderblue;
   }
-  .my-tangerine, h4 {
+  .my-tangerine, h1, h2, h4 {
     font-family: "Tangerine", serif;
     color: blue;
   }
-  .fs-medium {
-    display: flex;
-  	width: 300px;
-    height: 200px;
-    margin-top: 20px;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
+  h1 {
+    margin-top: 40px;
   }
-  .flexbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
   }
   p {
     color: blue;
   }
-  </style>
+  .fc-sm:hover {
+  background-color: lightgreen;
+  } 
+  h1, h2 {
+  text-align:center;
+  color: blue;
+}
+</style>
 </head>
 <!-- Body -->
 <body>
 
-<h2 class="w3-center my-tangerine w3-xxxlarge"> Integer Addition & Subtraction </h2>
-<h4 class="w3-center w3-xxlarge"> Click on a card to see the solution </h4>
-<br>
-<div class="flexbox">
+<h1>Integer Addition & Subtraction </h1>
+<h2>Click on a card to see the solution </h2>
+<div class="row">
 <!-- card 1 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
-    <p style="text-align: center;">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
+    <p>
       `\(+9\) + \(-4\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `\(+5\) + \(+4\) + \(-4\) ` <br>
       `= \(+5\)`
@@ -67,14 +69,14 @@
 
 </div>
 <!-- card 2 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `\(-7\) + \(-5\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `\(-12\)`
     </p>
@@ -82,14 +84,14 @@
 
 </div>
 <!-- card 3 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `\(-10\) + \(+5\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `\(-5\) + \(-5\) + \(+5\) ` <br>
       `= \(-5\)`
@@ -97,28 +99,30 @@
   </div>
 </div>
 <!-- card 4 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `\(+9\) + \(+8\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `\(+17\)`
     </p>
   </div>
 </div>
+</div>
+<div class="row">
 <!-- card 5 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `\(+11\) - \(-6\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `\(+11\) + \(+6\) = ` <br>
       `\(+17\)`
@@ -126,14 +130,14 @@
   </div>
 </div>
 <!-- card 6 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `\(-17\) - \(+5\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `\(-17\) + \(-5\) = ` <br>
       `\(-22\)`
@@ -141,14 +145,14 @@
   </div>
 </div>
 <!-- card 7 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `\(-12\) - \(-8\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `\(-12\) + \(+8\)=` <br>
       `=-4`
@@ -156,14 +160,14 @@
   </div>
 </div>
  <!-- card 8 -->
-<div class="w3-container fs-card">
-  <div class="w3-card-4 problem w3-hover-blue fs-medium">
+<div class="fs-card">
+  <div class="card shadow problem fc-sm">
     <p style="text-align: center;">
       `\(+20\) - \(+15\) =`
     </p>
   </div>
 
-  <div class="w3-card-4 solution fs-medium" style="display:none">
+  <div class="card shadow solution fc-sm" style="display:none">
     <p style="text-align: center;">
       `\(+20\) + \(-15\) =` <br>
       `\(+5\)`
@@ -171,19 +175,6 @@
   </div>
 </div>
 </div>
-<script>
-$(document).ready(function(){
-  $("div.fs-card").on({
-    mouseleave: function(){
-      $(this).children(".solution").hide();
-      $(this).children(".problem").show();
-    },
-    click: function(){
-      $(this).children(".solution").show();
-      $(this).children(".problem").hide();
-    }
-  });
-});
-</script>
+<script type="text/javascript" src="../../js/flashCard.js"></script>
 </body>
 </html>
