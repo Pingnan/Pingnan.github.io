@@ -103,16 +103,22 @@
       for (x in hands) {
         allHands.push(hands[x]);
       };
-      alert(allHands[100]);
-      alert(allHands.length);
     });
     $("button").click(function(){
-      // hand = AllHands[1];
-      // alert(hand);
-      $("#1stCard").text(Math.round(Math.random()*10+0.5));
-      $("#2ndCard").text(Math.round(Math.random()*10+0.5));
-      $("#3rdCard").text(Math.round(Math.random()*10+0.5));
-      $("#4thCard").text(Math.round(Math.random()*10+0.5));
+      // randomly picking a hand
+      index = Math.round(Math.random()*allHands.length)
+      hand = allHands[index];
+      // shuffle the hand
+      for (i of [3, 2, 1]) {
+        let j = Math.floor(Math.random()*i);
+        let temp = hand[i];
+        hand[i] = hand[j];
+        hand[j] = temp;
+      }
+      $("#1stCard").text(hand[0]);
+      $("#2ndCard").text(hand[1]);
+      $("#3rdCard").text(hand[2]);
+      $("#4thCard").text(hand[3]);
     });
   });
   </script>
