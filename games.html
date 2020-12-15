@@ -97,8 +97,18 @@
 </div>
 </div>
   <script>
+  var allHands = []
   $(document).ready(function(){
+    $.getJSON("hands.json", function(hands) {
+      for (x in hands) {
+        allHands.push(hands[x]);
+      };
+      alert(allHands[100]);
+      alert(allHands.length);
+    });
     $("button").click(function(){
+      // hand = AllHands[1];
+      // alert(hand);
       $("#1stCard").text(Math.round(Math.random()*10+0.5));
       $("#2ndCard").text(Math.round(Math.random()*10+0.5));
       $("#3rdCard").text(Math.round(Math.random()*10+0.5));
